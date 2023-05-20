@@ -43,7 +43,7 @@ namespace expensetracker1
             this.txtPassword = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtPasswordConfirmation = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.btnLogin = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.btnRegister = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -225,24 +225,24 @@ namespace expensetracker1
             this.txtPasswordConfirmation.TabIndex = 11;
             this.txtPasswordConfirmation.UseSystemPasswordChar = true;
             // 
-            // btnLogin
+            // btnRegister
             // 
-            this.btnLogin.Location = new System.Drawing.Point(244, 570);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(132, 45);
-            this.btnLogin.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
-            this.btnLogin.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
-            this.btnLogin.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
-            this.btnLogin.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
-            this.btnLogin.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnRegister.Location = new System.Drawing.Point(244, 570);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(132, 45);
+            this.btnRegister.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
+            this.btnRegister.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
+            this.btnRegister.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
+            this.btnRegister.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
+            this.btnRegister.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnLogin.StateCommon.Border.Rounding = 10;
-            this.btnLogin.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnLogin.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnLogin.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Anek Bangla Medium Medium", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.btnLogin.TabIndex = 13;
-            this.btnLogin.Values.Text = "Register";
+            this.btnRegister.StateCommon.Border.Rounding = 10;
+            this.btnRegister.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnRegister.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnRegister.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Anek Bangla Medium Medium", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.btnRegister.TabIndex = 13;
+            this.btnRegister.Values.Text = "Register";
             // 
             // RegisterForm
             // 
@@ -250,7 +250,7 @@ namespace expensetracker1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
             this.ClientSize = new System.Drawing.Size(966, 659);
-            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtPasswordConfirmation);
             this.Controls.Add(this.label5);
@@ -300,6 +300,6 @@ namespace expensetracker1
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtPassword;
         private System.Windows.Forms.Label label6;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtPasswordConfirmation;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btnLogin;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnRegister;
     }
 }
