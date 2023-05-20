@@ -34,7 +34,9 @@ namespace expensetracker1
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            RegisterForm registerForm = new RegisterForm();
+            registerForm.Show();
         }
     }
 }
