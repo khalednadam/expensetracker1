@@ -21,5 +21,15 @@ namespace expensetracker1
         {
 
         }
+
+        private void RegisterForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
