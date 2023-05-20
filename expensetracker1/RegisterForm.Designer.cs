@@ -31,7 +31,6 @@ namespace expensetracker1
         {
             this.components = new System.ComponentModel.Container();
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtName = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,6 +43,7 @@ namespace expensetracker1
             this.label6 = new System.Windows.Forms.Label();
             this.txtPasswordConfirmation = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.btnRegister = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,22 +59,12 @@ namespace expensetracker1
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Border.Width = 0;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::expensetracker1.Properties.Resources.gifts;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(597, -31);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(573, 695);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Anek Bangla Medium SemiBold", 32F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(139)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(12, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(145, 63);
             this.label1.TabIndex = 2;
@@ -121,7 +111,7 @@ namespace expensetracker1
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(150, 207);
+            this.txtEmail.Location = new System.Drawing.Point(150, 206);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(342, 43);
             this.txtEmail.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -169,7 +159,7 @@ namespace expensetracker1
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Anek Bangla Medium SemiBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(139)))), ((int)(((byte)(0)))));
-            this.label5.Location = new System.Drawing.Point(144, 348);
+            this.label5.Location = new System.Drawing.Point(144, 349);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(81, 31);
             this.label5.TabIndex = 10;
@@ -208,7 +198,7 @@ namespace expensetracker1
             // 
             // txtPasswordConfirmation
             // 
-            this.txtPasswordConfirmation.Location = new System.Drawing.Point(150, 471);
+            this.txtPasswordConfirmation.Location = new System.Drawing.Point(150, 470);
             this.txtPasswordConfirmation.Name = "txtPasswordConfirmation";
             this.txtPasswordConfirmation.PasswordChar = '●';
             this.txtPasswordConfirmation.Size = new System.Drawing.Size(342, 43);
@@ -229,7 +219,7 @@ namespace expensetracker1
             // 
             this.btnRegister.Location = new System.Drawing.Point(244, 570);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(132, 45);
+            this.btnRegister.Size = new System.Drawing.Size(132, 46);
             this.btnRegister.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
             this.btnRegister.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
             this.btnRegister.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
@@ -244,12 +234,22 @@ namespace expensetracker1
             this.btnRegister.TabIndex = 13;
             this.btnRegister.Values.Text = "Register";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::expensetracker1.Properties.Resources.gifts;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(627, -14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(573, 696);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.ClientSize = new System.Drawing.Size(966, 659);
+            this.ClientSize = new System.Drawing.Size(966, 658);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtPasswordConfirmation);

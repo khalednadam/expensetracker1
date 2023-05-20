@@ -29,7 +29,9 @@ namespace expensetracker1
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
