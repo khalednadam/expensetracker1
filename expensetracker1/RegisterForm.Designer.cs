@@ -63,9 +63,9 @@ namespace expensetracker1
             // 
             this.pictureBox1.BackgroundImage = global::expensetracker1.Properties.Resources.gifts;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(681, -31);
+            this.pictureBox1.Location = new System.Drawing.Point(597, -31);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(489, 695);
+            this.pictureBox1.Size = new System.Drawing.Size(573, 695);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
