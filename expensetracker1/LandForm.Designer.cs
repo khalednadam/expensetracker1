@@ -123,6 +123,7 @@ namespace expensetracker1
             this.btnLogin.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Anek Bangla Medium SemiBold", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.btnLogin.TabIndex = 2;
             this.btnLogin.Values.Text = "Login";
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnRegister
             // 
@@ -143,6 +144,7 @@ namespace expensetracker1
             this.btnRegister.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Anek Bangla Medium SemiBold", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.btnRegister.TabIndex = 3;
             this.btnRegister.Values.Text = "Register";
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // label2
             // 
@@ -159,6 +161,7 @@ namespace expensetracker1
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.CausesValidation = false;
             this.ClientSize = new System.Drawing.Size(834, 461);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnRegister);
@@ -168,6 +171,7 @@ namespace expensetracker1
             this.Font = new System.Drawing.Font("Anek Bangla Medium SemiBold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.MaximizeBox = false;
             this.Name = "LandForm";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
