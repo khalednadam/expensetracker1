@@ -129,7 +129,6 @@ namespace expensetracker1
             this.txtPassword.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(139)))), ((int)(((byte)(0)))));
             this.txtPassword.StateCommon.Content.Font = new System.Drawing.Font("Anek Bangla Medium Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.TabIndex = 16;
-            this.txtPassword.Text = " ";
             // 
             // label3
             // 
