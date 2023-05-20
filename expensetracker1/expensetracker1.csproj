@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LandForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LandForm.resx">
       <DependentUpon>LandForm.cs</DependentUpon>
     </EmbeddedResource>
