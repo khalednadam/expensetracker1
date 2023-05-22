@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComponentFactory.Krypton.Toolkit;
+using MySql.Data.MySqlClient;
 namespace expensetracker1
 {
     public partial class LandForm : KryptonForm
@@ -39,6 +40,11 @@ namespace expensetracker1
             this.Hide();
             RegisterForm registerForm = new RegisterForm();
             registerForm.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
