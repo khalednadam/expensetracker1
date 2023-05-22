@@ -233,6 +233,7 @@ namespace expensetracker1
             this.btnRegister.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Anek Bangla Medium Medium", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.btnRegister.TabIndex = 13;
             this.btnRegister.Values.Text = "Register";
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // pictureBox1
             // 

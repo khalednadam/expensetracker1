@@ -13,8 +13,11 @@ namespace expensetracker1
 {
     public partial class LandForm : KryptonForm
     {
+        private MySqlConnection connection;
+        
         public LandForm()
         {
+            Console.WriteLine(connection);
             InitializeComponent();
         }
 
