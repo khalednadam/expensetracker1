@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace expensetracker1
 {
-    public partial class btnDashboard : Form
+    public partial class DashboardForm : Form
     {
-        public btnDashboard()
+        public DashboardForm()
         {
             InitializeComponent();
         }

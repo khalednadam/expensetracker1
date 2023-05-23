@@ -1,7 +1,7 @@
 ﻿
 namespace expensetracker1
 {
-    partial class btnDashboard
+    partial class DashboardForm
     {
         /// <summary>
         /// Required designer variable.
@@ -166,13 +166,13 @@ namespace expensetracker1
             this.kryptonButton8.TabIndex = 11;
             this.kryptonButton8.Values.Text = "Logout";
             // 
-            // btnDashboard
+            // DashboardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1190, 727);
             this.Controls.Add(this.panel1);
-            this.Name = "btnDashboard";
+            this.Name = "DashboardForm";
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.btnDashboard_Load);
             this.panel1.ResumeLayout(false);
