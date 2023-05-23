@@ -47,10 +47,11 @@ namespace expensetracker1
             // 
             // label3
             // 
-            this.label3.Font = new System.Drawing.Font("Anek Bangla", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(17, 24);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(13, 20);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(193, 39);
+            this.label3.Size = new System.Drawing.Size(145, 32);
             this.label3.TabIndex = 3;
             this.label3.Text = "Welcome,";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -59,9 +60,10 @@ namespace expensetracker1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Anek Bangla Medium", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(17, 63);
+            this.label1.Location = new System.Drawing.Point(13, 51);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(177, 47);
+            this.label1.Size = new System.Drawing.Size(137, 37);
             this.label1.TabIndex = 4;
             this.label1.Text = "Khaled Nadam";
             // 
@@ -78,39 +80,43 @@ namespace expensetracker1
             this.panel1.Controls.Add(this.kryptonButton1);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(-10, -15);
+            this.panel1.Location = new System.Drawing.Point(-8, -12);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(297, 733);
+            this.panel1.Size = new System.Drawing.Size(223, 596);
             this.panel1.TabIndex = 5;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // kryptonButton8
             // 
             this.kryptonButton8.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
-            this.kryptonButton8.Location = new System.Drawing.Point(82, 537);
+            this.kryptonButton8.Location = new System.Drawing.Point(62, 436);
+            this.kryptonButton8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonButton8.Name = "kryptonButton8";
             this.kryptonButton8.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton8.Size = new System.Drawing.Size(310, 64);
+            this.kryptonButton8.Size = new System.Drawing.Size(232, 52);
             this.kryptonButton8.TabIndex = 11;
             this.kryptonButton8.Values.Text = "Logout";
             // 
             // kryptonButton7
             // 
             this.kryptonButton7.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
-            this.kryptonButton7.Location = new System.Drawing.Point(82, 481);
+            this.kryptonButton7.Location = new System.Drawing.Point(62, 391);
+            this.kryptonButton7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonButton7.Name = "kryptonButton7";
             this.kryptonButton7.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton7.Size = new System.Drawing.Size(310, 64);
+            this.kryptonButton7.Size = new System.Drawing.Size(232, 52);
             this.kryptonButton7.TabIndex = 10;
             this.kryptonButton7.Values.Text = "About Us";
             // 
             // kryptonButton6
             // 
             this.kryptonButton6.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
-            this.kryptonButton6.Location = new System.Drawing.Point(82, 432);
+            this.kryptonButton6.Location = new System.Drawing.Point(62, 351);
+            this.kryptonButton6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonButton6.Name = "kryptonButton6";
             this.kryptonButton6.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton6.Size = new System.Drawing.Size(310, 64);
+            this.kryptonButton6.Size = new System.Drawing.Size(232, 52);
             this.kryptonButton6.TabIndex = 9;
             this.kryptonButton6.Values.Text = "Preferences";
             this.kryptonButton6.Click += new System.EventHandler(this.kryptonButton6_Click);
@@ -118,70 +124,80 @@ namespace expensetracker1
             // kryptonButton5
             // 
             this.kryptonButton5.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
-            this.kryptonButton5.Location = new System.Drawing.Point(82, 376);
+            this.kryptonButton5.Location = new System.Drawing.Point(62, 306);
+            this.kryptonButton5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonButton5.Name = "kryptonButton5";
             this.kryptonButton5.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton5.Size = new System.Drawing.Size(310, 64);
+            this.kryptonButton5.Size = new System.Drawing.Size(232, 52);
             this.kryptonButton5.TabIndex = 8;
             this.kryptonButton5.Values.Text = "goal";
             // 
             // kryptonButton4
             // 
             this.kryptonButton4.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
-            this.kryptonButton4.Location = new System.Drawing.Point(82, 321);
+            this.kryptonButton4.Location = new System.Drawing.Point(62, 261);
+            this.kryptonButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonButton4.Name = "kryptonButton4";
             this.kryptonButton4.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton4.Size = new System.Drawing.Size(310, 64);
+            this.kryptonButton4.Size = new System.Drawing.Size(232, 52);
             this.kryptonButton4.TabIndex = 7;
             this.kryptonButton4.Values.Text = "Total Spending";
             // 
             // kryptonButton3
             // 
             this.kryptonButton3.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
-            this.kryptonButton3.Location = new System.Drawing.Point(82, 266);
+            this.kryptonButton3.Location = new System.Drawing.Point(62, 216);
+            this.kryptonButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonButton3.Name = "kryptonButton3";
             this.kryptonButton3.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton3.Size = new System.Drawing.Size(310, 64);
+            this.kryptonButton3.Size = new System.Drawing.Size(232, 52);
             this.kryptonButton3.TabIndex = 6;
             this.kryptonButton3.Values.Text = "Add Expense";
             // 
             // kryptonButton2
             // 
             this.kryptonButton2.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
-            this.kryptonButton2.Location = new System.Drawing.Point(82, 207);
+            this.kryptonButton2.Location = new System.Drawing.Point(62, 168);
+            this.kryptonButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonButton2.Name = "kryptonButton2";
             this.kryptonButton2.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton2.Size = new System.Drawing.Size(310, 64);
+            this.kryptonButton2.Size = new System.Drawing.Size(232, 52);
             this.kryptonButton2.TabIndex = 5;
             this.kryptonButton2.Values.Text = "Add Income";
             // 
             // kryptonButton1
             // 
             this.kryptonButton1.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
-            this.kryptonButton1.Location = new System.Drawing.Point(82, 150);
+            this.kryptonButton1.Location = new System.Drawing.Point(62, 122);
+            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonButton1.Name = "kryptonButton1";
             this.kryptonButton1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton1.Size = new System.Drawing.Size(310, 64);
+            this.kryptonButton1.Size = new System.Drawing.Size(232, 52);
             this.kryptonButton1.TabIndex = 0;
             this.kryptonButton1.Values.Text = "Dashboard";
             this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
             // 
             // kryptonPalette1
             // 
+            this.kryptonPalette1.BasePaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Blue;
             this.kryptonPalette1.ButtonSpecs.FormClose.Image = global::expensetracker1.Properties.Resources.close;
             this.kryptonPalette1.ButtonSpecs.FormClose.ImageStates.ImagePressed = global::expensetracker1.Properties.Resources.close;
             this.kryptonPalette1.ButtonSpecs.FormClose.ImageStates.ImageTracking = global::expensetracker1.Properties.Resources.close;
+            this.kryptonPalette1.ButtonSpecs.FormClose.Orientation = ComponentFactory.Krypton.Toolkit.PaletteButtonOrientation.Inherit;
+            this.kryptonPalette1.ButtonSpecs.FormClose.Style = ComponentFactory.Krypton.Toolkit.PaletteButtonStyle.Inherit;
             this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
             this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             // 
             // DashboardForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.ClientSize = new System.Drawing.Size(1190, 727);
+            this.ClientSize = new System.Drawing.Size(892, 591);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "DashboardForm";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
@@ -189,9 +205,11 @@ namespace expensetracker1
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
             this.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.StateCommon.Border.Rounding = 10;
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.btnDashboard_Load);
