@@ -96,5 +96,35 @@ namespace expensetracker1
                 MessageBox.Show(err.Message);
             }
         }
+
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNumber_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
