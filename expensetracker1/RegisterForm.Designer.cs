@@ -67,11 +67,11 @@ namespace expensetracker1
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Anek Bangla Medium SemiBold", 32F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(139)))), ((int)(((byte)(0)))));
             this.label1.Location = new System.Drawing.Point(12, 8);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 63);
+            this.label1.Size = new System.Drawing.Size(147, 38);
             this.label1.TabIndex = 2;
             this.label1.Text = "Register";
             // 
@@ -79,7 +79,7 @@ namespace expensetracker1
             // 
             this.txtName.Location = new System.Drawing.Point(150, 127);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(342, 43);
+            this.txtName.Size = new System.Drawing.Size(342, 36);
             this.txtName.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.txtName.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.txtName.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
@@ -90,36 +90,39 @@ namespace expensetracker1
             this.txtName.StateCommon.Border.Rounding = 10;
             this.txtName.StateCommon.Border.Width = 1;
             this.txtName.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(139)))), ((int)(((byte)(0)))));
-            this.txtName.StateCommon.Content.Font = new System.Drawing.Font("Anek Bangla Medium Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.TabIndex = 3;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Anek Bangla Medium SemiBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(139)))), ((int)(((byte)(0)))));
             this.label2.Location = new System.Drawing.Point(144, 93);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 31);
+            this.label2.Size = new System.Drawing.Size(57, 20);
             this.label2.TabIndex = 4;
             this.label2.Text = "Name";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Anek Bangla Medium SemiBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(139)))), ((int)(((byte)(0)))));
             this.label3.Location = new System.Drawing.Point(144, 173);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 31);
+            this.label3.Size = new System.Drawing.Size(56, 20);
             this.label3.TabIndex = 6;
             this.label3.Text = "Email";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(150, 206);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(342, 43);
+            this.txtEmail.Size = new System.Drawing.Size(342, 36);
             this.txtEmail.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.txtEmail.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.txtEmail.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
@@ -130,25 +133,27 @@ namespace expensetracker1
             this.txtEmail.StateCommon.Border.Rounding = 10;
             this.txtEmail.StateCommon.Border.Width = 1;
             this.txtEmail.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(139)))), ((int)(((byte)(0)))));
-            this.txtEmail.StateCommon.Content.Font = new System.Drawing.Font("Anek Bangla Medium Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.TabIndex = 5;
+            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Anek Bangla Medium SemiBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(139)))), ((int)(((byte)(0)))));
             this.label4.Location = new System.Drawing.Point(144, 259);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(116, 31);
+            this.label4.Size = new System.Drawing.Size(132, 20);
             this.label4.TabIndex = 8;
             this.label4.Text = "Phone Number";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // txtNumber
             // 
             this.txtNumber.Location = new System.Drawing.Point(150, 293);
             this.txtNumber.Name = "txtNumber";
-            this.txtNumber.Size = new System.Drawing.Size(342, 43);
+            this.txtNumber.Size = new System.Drawing.Size(342, 36);
             this.txtNumber.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.txtNumber.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.txtNumber.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
@@ -159,17 +164,18 @@ namespace expensetracker1
             this.txtNumber.StateCommon.Border.Rounding = 10;
             this.txtNumber.StateCommon.Border.Width = 1;
             this.txtNumber.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(139)))), ((int)(((byte)(0)))));
-            this.txtNumber.StateCommon.Content.Font = new System.Drawing.Font("Anek Bangla Medium Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumber.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumber.TabIndex = 7;
+            this.txtNumber.TextChanged += new System.EventHandler(this.txtNumber_TextChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Anek Bangla Medium SemiBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(139)))), ((int)(((byte)(0)))));
             this.label5.Location = new System.Drawing.Point(144, 349);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(81, 31);
+            this.label5.Size = new System.Drawing.Size(91, 20);
             this.label5.TabIndex = 10;
             this.label5.Text = "Password";
             // 
@@ -178,7 +184,7 @@ namespace expensetracker1
             this.txtPassword.Location = new System.Drawing.Point(150, 382);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '●';
-            this.txtPassword.Size = new System.Drawing.Size(342, 43);
+            this.txtPassword.Size = new System.Drawing.Size(342, 36);
             this.txtPassword.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.txtPassword.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.txtPassword.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
@@ -189,7 +195,7 @@ namespace expensetracker1
             this.txtPassword.StateCommon.Border.Rounding = 10;
             this.txtPassword.StateCommon.Border.Width = 1;
             this.txtPassword.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(139)))), ((int)(((byte)(0)))));
-            this.txtPassword.StateCommon.Content.Font = new System.Drawing.Font("Anek Bangla Medium Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.TabIndex = 9;
             this.txtPassword.UseSystemPasswordChar = true;
             this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
@@ -197,11 +203,11 @@ namespace expensetracker1
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Anek Bangla Medium SemiBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(139)))), ((int)(((byte)(0)))));
             this.label6.Location = new System.Drawing.Point(144, 437);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(175, 31);
+            this.label6.Size = new System.Drawing.Size(204, 20);
             this.label6.TabIndex = 12;
             this.label6.Text = "Password Confirmation";
             // 
@@ -210,7 +216,7 @@ namespace expensetracker1
             this.txtPasswordConfirmation.Location = new System.Drawing.Point(150, 470);
             this.txtPasswordConfirmation.Name = "txtPasswordConfirmation";
             this.txtPasswordConfirmation.PasswordChar = '●';
-            this.txtPasswordConfirmation.Size = new System.Drawing.Size(342, 43);
+            this.txtPasswordConfirmation.Size = new System.Drawing.Size(342, 36);
             this.txtPasswordConfirmation.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.txtPasswordConfirmation.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.txtPasswordConfirmation.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
@@ -221,7 +227,7 @@ namespace expensetracker1
             this.txtPasswordConfirmation.StateCommon.Border.Rounding = 10;
             this.txtPasswordConfirmation.StateCommon.Border.Width = 1;
             this.txtPasswordConfirmation.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(139)))), ((int)(((byte)(0)))));
-            this.txtPasswordConfirmation.StateCommon.Content.Font = new System.Drawing.Font("Anek Bangla Medium Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPasswordConfirmation.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPasswordConfirmation.TabIndex = 11;
             this.txtPasswordConfirmation.UseSystemPasswordChar = true;
             // 
@@ -242,7 +248,10 @@ namespace expensetracker1
             this.btnRegister.StateCommon.Border.Rounding = 10;
             this.btnRegister.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnRegister.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnRegister.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Anek Bangla Medium Medium", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+
+              this.btnRegister.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+
+  this.btnRegister.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Anek Bangla Medium Medium", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.btnRegister.StateCommon.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.btnRegister.StateCommon.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.btnRegister.TabIndex = 13;
@@ -261,7 +270,7 @@ namespace expensetracker1
             // 
             // RegisterForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
             this.ClientSize = new System.Drawing.Size(966, 658);
@@ -278,7 +287,9 @@ namespace expensetracker1
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Font = new System.Drawing.Font("Anek Bangla Medium SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+   this.Font = new System.Drawing.Font("Anek Bangla Medium SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "RegisterForm";
