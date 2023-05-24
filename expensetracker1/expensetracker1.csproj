@@ -143,6 +143,12 @@
     <Compile Include="Prefrences.Designer.cs">
       <DependentUpon>Prefrences.cs</DependentUpon>
     </Compile>
+    <Compile Include="prefrencs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="prefrencs.Designer.cs">
+      <DependentUpon>prefrencs.cs</DependentUpon>
+    </Compile>
     <Compile Include="RegisterForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="prefrencs.resx">
+      <DependentUpon>prefrencs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
