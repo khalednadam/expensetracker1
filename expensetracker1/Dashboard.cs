@@ -8,14 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComponentFactory.Krypton.Toolkit;
-
+using MySql.Data.MySqlClient;
 namespace expensetracker1
 {
+
     public partial class DashboardForm : KryptonForm
     {
-        public DashboardForm()
+        private MySqlConnection connection;
+        private const string connectionString = "server=localhost;database=tracker;user=root;password=";
+        public DashboardForm(string name)
         {
             InitializeComponent();
+            label1.Text = name;
         }
 
         private void kryptonButton1_Click(object sender, EventArgs e)
@@ -45,7 +49,18 @@ namespace expensetracker1
 
         private void btnDashboard_Load(object sender, EventArgs e)
         {
-
+            connection = new MySqlConnection(connectionString);
+            connection.Open();
+            if (connection.State == ConnectionState.Open)
+            {
+                // Connection is open
+                Console.WriteLine("Connection is open.");
+            }
+            else
+            {
+                // Connection is not open
+                Console.WriteLine("Connection is not open.");
+            }
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
