@@ -33,15 +33,30 @@ namespace expensetracker1
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.kryptonButton8 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kryptonButton7 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kryptonButton6 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kryptonButton5 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kryptonButton4 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kryptonButton3 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.btnLogout = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.btnAboutus = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.btnPrefrences = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.btnTotalspending = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.btnAddexpence = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.btnAddincome = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.btnDashboard = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.btnIncome = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.btnExpence = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,14 +83,13 @@ namespace expensetracker1
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(189)))), ((int)(((byte)(209)))));
-            this.panel1.Controls.Add(this.kryptonButton8);
-            this.panel1.Controls.Add(this.kryptonButton7);
-            this.panel1.Controls.Add(this.kryptonButton6);
-            this.panel1.Controls.Add(this.kryptonButton5);
-            this.panel1.Controls.Add(this.kryptonButton4);
-            this.panel1.Controls.Add(this.kryptonButton3);
-            this.panel1.Controls.Add(this.kryptonButton2);
-            this.panel1.Controls.Add(this.kryptonButton1);
+            this.panel1.Controls.Add(this.btnLogout);
+            this.panel1.Controls.Add(this.btnAboutus);
+            this.panel1.Controls.Add(this.btnPrefrences);
+            this.panel1.Controls.Add(this.btnTotalspending);
+            this.panel1.Controls.Add(this.btnAddexpence);
+            this.panel1.Controls.Add(this.btnAddincome);
+            this.panel1.Controls.Add(this.btnDashboard);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-11, -15);
@@ -85,95 +99,84 @@ namespace expensetracker1
             this.panel1.TabIndex = 5;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // kryptonButton8
+            // btnLogout
             // 
-            this.kryptonButton8.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
-            this.kryptonButton8.Location = new System.Drawing.Point(83, 537);
-            this.kryptonButton8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonButton8.Name = "kryptonButton8";
-            this.kryptonButton8.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton8.Size = new System.Drawing.Size(309, 64);
-            this.kryptonButton8.TabIndex = 11;
-            this.kryptonButton8.Values.Text = "Logout";
+            this.btnLogout.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
+            this.btnLogout.Location = new System.Drawing.Point(83, 490);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.btnLogout.Size = new System.Drawing.Size(309, 64);
+            this.btnLogout.TabIndex = 11;
+            this.btnLogout.Values.Text = "Logout";
             // 
-            // kryptonButton7
+            // btnAboutus
             // 
-            this.kryptonButton7.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
-            this.kryptonButton7.Location = new System.Drawing.Point(83, 481);
-            this.kryptonButton7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonButton7.Name = "kryptonButton7";
-            this.kryptonButton7.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton7.Size = new System.Drawing.Size(309, 64);
-            this.kryptonButton7.TabIndex = 10;
-            this.kryptonButton7.Values.Text = "About Us";
+            this.btnAboutus.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
+            this.btnAboutus.Location = new System.Drawing.Point(83, 435);
+            this.btnAboutus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAboutus.Name = "btnAboutus";
+            this.btnAboutus.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.btnAboutus.Size = new System.Drawing.Size(309, 64);
+            this.btnAboutus.TabIndex = 10;
+            this.btnAboutus.Values.Text = "About Us";
             // 
-            // kryptonButton6
+            // btnPrefrences
             // 
-            this.kryptonButton6.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
-            this.kryptonButton6.Location = new System.Drawing.Point(83, 432);
-            this.kryptonButton6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonButton6.Name = "kryptonButton6";
-            this.kryptonButton6.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton6.Size = new System.Drawing.Size(309, 64);
-            this.kryptonButton6.TabIndex = 9;
-            this.kryptonButton6.Values.Text = "Preferences";
-            this.kryptonButton6.Click += new System.EventHandler(this.kryptonButton6_Click);
+            this.btnPrefrences.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
+            this.btnPrefrences.Location = new System.Drawing.Point(83, 377);
+            this.btnPrefrences.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPrefrences.Name = "btnPrefrences";
+            this.btnPrefrences.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.btnPrefrences.Size = new System.Drawing.Size(309, 64);
+            this.btnPrefrences.TabIndex = 9;
+            this.btnPrefrences.Values.Text = "Preferences";
+            this.btnPrefrences.Click += new System.EventHandler(this.kryptonButton6_Click);
             // 
-            // kryptonButton5
+            // btnTotalspending
             // 
-            this.kryptonButton5.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
-            this.kryptonButton5.Location = new System.Drawing.Point(83, 377);
-            this.kryptonButton5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonButton5.Name = "kryptonButton5";
-            this.kryptonButton5.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton5.Size = new System.Drawing.Size(309, 64);
-            this.kryptonButton5.TabIndex = 8;
-            this.kryptonButton5.Values.Text = "goal";
+            this.btnTotalspending.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
+            this.btnTotalspending.Location = new System.Drawing.Point(83, 321);
+            this.btnTotalspending.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTotalspending.Name = "btnTotalspending";
+            this.btnTotalspending.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.btnTotalspending.Size = new System.Drawing.Size(309, 64);
+            this.btnTotalspending.TabIndex = 7;
+            this.btnTotalspending.Values.Text = "Total Spending";
             // 
-            // kryptonButton4
+            // btnAddexpence
             // 
-            this.kryptonButton4.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
-            this.kryptonButton4.Location = new System.Drawing.Point(83, 321);
-            this.kryptonButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonButton4.Name = "kryptonButton4";
-            this.kryptonButton4.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton4.Size = new System.Drawing.Size(309, 64);
-            this.kryptonButton4.TabIndex = 7;
-            this.kryptonButton4.Values.Text = "Total Spending";
+            this.btnAddexpence.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
+            this.btnAddexpence.Location = new System.Drawing.Point(83, 266);
+            this.btnAddexpence.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddexpence.Name = "btnAddexpence";
+            this.btnAddexpence.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.btnAddexpence.Size = new System.Drawing.Size(309, 64);
+            this.btnAddexpence.TabIndex = 6;
+            this.btnAddexpence.Values.Text = "Add Expense";
             // 
-            // kryptonButton3
+            // btnAddincome
             // 
-            this.kryptonButton3.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
-            this.kryptonButton3.Location = new System.Drawing.Point(83, 266);
-            this.kryptonButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonButton3.Name = "kryptonButton3";
-            this.kryptonButton3.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton3.Size = new System.Drawing.Size(309, 64);
-            this.kryptonButton3.TabIndex = 6;
-            this.kryptonButton3.Values.Text = "Add Expense";
+            this.btnAddincome.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
+            this.btnAddincome.Location = new System.Drawing.Point(83, 207);
+            this.btnAddincome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddincome.Name = "btnAddincome";
+            this.btnAddincome.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.btnAddincome.Size = new System.Drawing.Size(309, 64);
+            this.btnAddincome.TabIndex = 5;
+            this.btnAddincome.Values.Text = "Add Income";
             // 
-            // kryptonButton2
+            // btnDashboard
             // 
-            this.kryptonButton2.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
-            this.kryptonButton2.Location = new System.Drawing.Point(83, 207);
-            this.kryptonButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonButton2.Name = "kryptonButton2";
-            this.kryptonButton2.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton2.Size = new System.Drawing.Size(309, 64);
-            this.kryptonButton2.TabIndex = 5;
-            this.kryptonButton2.Values.Text = "Add Income";
-            // 
-            // kryptonButton1
-            // 
-            this.kryptonButton1.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
-            this.kryptonButton1.Location = new System.Drawing.Point(83, 150);
-            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton1.Size = new System.Drawing.Size(309, 64);
-            this.kryptonButton1.TabIndex = 0;
-            this.kryptonButton1.Values.Text = "Dashboard";
-            this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
+            this.btnDashboard.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
+            this.btnDashboard.Location = new System.Drawing.Point(83, 150);
+            this.btnDashboard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.btnDashboard.Size = new System.Drawing.Size(309, 64);
+            this.btnDashboard.TabIndex = 0;
+            this.btnDashboard.Values.Text = "Dashboard";
+            this.btnDashboard.Click += new System.EventHandler(this.kryptonButton1_Click);
             // 
             // kryptonPalette1
             // 
@@ -183,12 +186,225 @@ namespace expensetracker1
             this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
             this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Anek Bangla", 19.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(139)))), ((int)(((byte)(0)))));
+            this.label2.Location = new System.Drawing.Point(302, 25);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(186, 64);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Dashboard";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Anek Bangla", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(139)))), ((int)(((byte)(0)))));
+            this.label4.Location = new System.Drawing.Point(305, 89);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(239, 47);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Spendings This Month";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Anek Bangla SemiExpanded ExtraB", 31.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(210)))), ((int)(((byte)(0)))));
+            this.label5.Location = new System.Drawing.Point(299, 135);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(259, 103);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "703.34$";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Anek Bangla", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(139)))), ((int)(((byte)(0)))));
+            this.label6.Location = new System.Drawing.Point(309, 258);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(183, 47);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Last 5 expences ";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Anek Bangla", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(309, 314);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(154, 39);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "$10.00 - clothing";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Anek Bangla", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(310, 477);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(164, 39);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "$34.47 - Groceries";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Anek Bangla", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(310, 438);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(168, 39);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "$400.00 - Housing";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Anek Bangla", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(310, 397);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(202, 39);
+            this.label10.TabIndex = 19;
+            this.label10.Text = "$3.70 - Transportation";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Anek Bangla", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(310, 353);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(130, 39);
+            this.label11.TabIndex = 20;
+            this.label11.Text = "$30.40 - Food";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Anek Bangla SemiBold", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(139)))), ((int)(((byte)(0)))));
+            this.label12.Location = new System.Drawing.Point(784, 224);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(325, 91);
+            this.label12.TabIndex = 21;
+            this.label12.Text = "20% Groceries";
+            this.label12.Click += new System.EventHandler(this.label12_Click_1);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Anek Bangla SemiBold", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(139)))), ((int)(((byte)(0)))));
+            this.label13.Location = new System.Drawing.Point(784, 143);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(297, 91);
+            this.label13.TabIndex = 22;
+            this.label13.Text = "70% Housing";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Anek Bangla SemiBold", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(139)))), ((int)(((byte)(0)))));
+            this.label14.Location = new System.Drawing.Point(784, 488);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(420, 91);
+            this.label14.TabIndex = 23;
+            this.label14.Text = "2%  Transportation";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Anek Bangla SemiBold", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(139)))), ((int)(((byte)(0)))));
+            this.label15.Location = new System.Drawing.Point(784, 397);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(274, 91);
+            this.label15.TabIndex = 24;
+            this.label15.Text = "3% Clothing";
+            this.label15.Click += new System.EventHandler(this.label15_Click);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Anek Bangla SemiBold", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(139)))), ((int)(((byte)(0)))));
+            this.label16.Location = new System.Drawing.Point(784, 306);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(228, 91);
+            this.label16.TabIndex = 25;
+            this.label16.Text = "10% Food";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
+            // 
+            // btnIncome
+            // 
+            this.btnIncome.Location = new System.Drawing.Point(696, 642);
+            this.btnIncome.Name = "btnIncome";
+            this.btnIncome.Size = new System.Drawing.Size(141, 61);
+            this.btnIncome.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
+            this.btnIncome.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
+            this.btnIncome.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
+            this.btnIncome.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
+            this.btnIncome.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnIncome.StateCommon.Border.Rounding = 10;
+            this.btnIncome.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnIncome.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnIncome.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.btnIncome.TabIndex = 27;
+            this.btnIncome.Values.Text = "Add Income";
+            // 
+            // btnExpence
+            // 
+            this.btnExpence.Location = new System.Drawing.Point(500, 642);
+            this.btnExpence.Name = "btnExpence";
+            this.btnExpence.Size = new System.Drawing.Size(141, 61);
+            this.btnExpence.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
+            this.btnExpence.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
+            this.btnExpence.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
+            this.btnExpence.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
+            this.btnExpence.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnExpence.StateCommon.Border.Rounding = 10;
+            this.btnExpence.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnExpence.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnExpence.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.btnExpence.TabIndex = 28;
+            this.btnExpence.Values.Text = "Add Expence";
+            // 
             // DashboardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.ClientSize = new System.Drawing.Size(1189, 727);
+            this.ClientSize = new System.Drawing.Size(1236, 727);
+            this.Controls.Add(this.btnExpence);
+            this.Controls.Add(this.btnIncome);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -208,6 +424,7 @@ namespace expensetracker1
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -215,14 +432,29 @@ namespace expensetracker1
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        public ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
-        public ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton6;
-        public ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton5;
-        public ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton4;
-        public ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton3;
-        public ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
-        public ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton8;
-        public ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton7;
+        public ComponentFactory.Krypton.Toolkit.KryptonButton btnDashboard;
+        public ComponentFactory.Krypton.Toolkit.KryptonButton btnPrefrences;
+        public ComponentFactory.Krypton.Toolkit.KryptonButton btnTotalspending;
+        public ComponentFactory.Krypton.Toolkit.KryptonButton btnAddexpence;
+        public ComponentFactory.Krypton.Toolkit.KryptonButton btnAddincome;
+        public ComponentFactory.Krypton.Toolkit.KryptonButton btnLogout;
+        public ComponentFactory.Krypton.Toolkit.KryptonButton btnAboutus;
         private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnIncome;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnExpence;
     }
 }
