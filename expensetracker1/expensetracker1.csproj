@@ -113,6 +113,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Addexpense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Addexpense.Designer.cs">
+      <DependentUpon>Addexpense.cs</DependentUpon>
+    </Compile>
     <Compile Include="Addincome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +157,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Addexpense.resx">
+      <DependentUpon>Addexpense.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Addincome.resx">
       <DependentUpon>Addincome.cs</DependentUpon>
     </EmbeddedResource>
