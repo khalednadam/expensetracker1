@@ -13,7 +13,7 @@ namespace expensetracker1
 {
     public partial class AboutUsForm : KryptonForm
     {
-        public AboutUs()
+        public AboutUsForm()
         {
             InitializeComponent();
         }
