@@ -169,9 +169,15 @@
     <Compile Include="Totalspending.Designer.cs">
       <DependentUpon>Totalspending.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AboutUs.resx">
+        <EmbeddedResource Include="AboutUs.resx">
       <DependentUpon>AboutUs.cs</DependentUpon>
     </EmbeddedResource>
+    <Compile Include="Totalspendingmain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Totalspendingmain.Designer.cs">
+      <DependentUpon>Totalspendingmain.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Addexpense.resx">
       <DependentUpon>Addexpense.cs</DependentUpon>
     </EmbeddedResource>
@@ -205,6 +211,9 @@
     </Compile>
     <EmbeddedResource Include="Totalspending.resx">
       <DependentUpon>Totalspending.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Totalspendingmain.resx">
+      <DependentUpon>Totalspendingmain.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
