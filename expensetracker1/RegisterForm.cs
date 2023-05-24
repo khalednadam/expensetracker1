@@ -59,23 +59,36 @@ namespace expensetracker1
             string email = txtEmail.Text.ToString();
             string password = txtPassword.Text.ToString();
             string phoneNumber = txtNumber.Text.ToString();
+                string passwordConfirmation = txtPasswordConfirmation.Text.ToString(); 
             int spendingIds = 0;
             int incomeIds = 0;
-            float yearlyGoal = 0;
-            string currency = "SD";
-            string Query = "insert into users(email, password, phoneNumber, name, spendingIds, incomeIds, yearlyGoal, currency) " +
-                "values ( '" + email + "','" + password + "', '" + phoneNumber + "',  '" + name + "', '" + spendingIds +"','" + incomeIds + "',  '" + yearlyGoal +"', '" +currency+ "')";
+                if(passwordConfirmation == password)
+                {
+
+            string Query = "insert into users(email, password, phoneNumber, name, spendingIds, incomeIds) " +
+                "values ( '" + email + "','" + password + "', '" + phoneNumber + "',  '" + name + "', '" + spendingIds +"','" + incomeIds + "')";
             
                 MySqlConnection MyConn2 = new MySqlConnection(connectionString);
                 MySqlCommand MyCommand2 = new MySqlCommand(Query, MyConn2);
                 MySqlDataReader MyReader2;
                 MyConn2.Open();
                 MyReader2 = MyCommand2.ExecuteReader();     // Here our query will be executed and data saved into the database.
-                MessageBox.Show("Save Data");
+                DialogResult dr = MessageBox.Show("Welcome, go to login page to be able to login.", "Account created", MessageBoxButtons.OK);
+                    if(dr == DialogResult.OK)
+                    {
+                        this.Hide();
+                        LoginForm loginForm = new LoginForm();
+                        loginForm.Show();
+                    }
                 while (MyReader2.Read())
                 {
                 }
                 MyConn2.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Passwords do not match!");
+                }
             }
 
             catch (Exception err)
