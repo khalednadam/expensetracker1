@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComponentFactory.Krypton.Toolkit;
+using System.Globalization;
+
 namespace expensetracker1
 {
+
     public partial class Addincome : KryptonForm
     {
+
         public Addincome()
         {
             InitializeComponent();
+           
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -50,6 +55,17 @@ namespace expensetracker1
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Addincome_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            float amount = float.Parse(txtamount.Text.ToString(), CultureInfo.InvariantCulture.NumberFormat);
+            MessageBox.Show("amount" + amount);
         }
     }
 }
