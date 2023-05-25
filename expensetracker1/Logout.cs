@@ -57,7 +57,7 @@ namespace expensetracker1
         private void kryptonButton4_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Totalspending totalspending   = new Totalspending(id);
+            Totalspendingmain totalspending   = new Totalspendingmain(id);
             totalspending.Show();
         }
 
