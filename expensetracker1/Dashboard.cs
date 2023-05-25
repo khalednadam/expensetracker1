@@ -26,7 +26,7 @@ namespace expensetracker1
 
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
-            
+           
         }
 
         private void kryptonLabel1_Paint(object sender, PaintEventArgs e)
@@ -56,6 +56,8 @@ namespace expensetracker1
 
         private void btnDashboard_Load(object sender, EventArgs e)
         {
+            List<float> totalSpendings = new List<float>();
+            List<string> categoriesOfSpendings = new List<string>();
             connection = new MySqlConnection(connectionString);
             connection.Open();
             if (connection.State == ConnectionState.Open)
@@ -67,6 +69,81 @@ namespace expensetracker1
             {
                 // Connection is not open
                 Console.WriteLine("Connection is not open.");
+            }
+            string sql = "SELECT amount, date, name, category FROM spending WHERE userId = @id order by date DESC";
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                using (MySqlCommand command = new MySqlCommand(sql, connection))
+                {
+                    command.Parameters.AddWithValue("@id", id);
+                    connection.Open();
+
+                    MySqlDataReader spendingReader = command.ExecuteReader();
+                    float totalSpending = 0;
+                    while (spendingReader.Read())
+                    {
+                        float spending = (float)spendingReader["amount"];
+                        string category = (string)spendingReader["category"];
+                        Console.WriteLine((float) spending);
+                        totalSpendings.Add(spending);
+                        categoriesOfSpendings.Add(category);
+                        totalSpending += spending;
+                    }
+                    lblSpendings.Text = totalSpending.ToString();
+                }
+            }
+            Console.WriteLine("---------");
+            int handleSize;
+            if(totalSpendings.Count < 5)
+            {
+                handleSize = totalSpendings.Count;
+            }
+            else
+            {
+                handleSize = 5;
+            }
+            if(handleSize == 0)
+            {
+                lblSpended1.Text = "";
+                lblSpended2.Text = "";
+                lblSpended3.Text = "";
+                lblSpended4.Text = "";
+                lblSpended5.Text = "";
+            }else if(handleSize == 1)
+            {
+                lblSpended1.Text = totalSpendings[0].ToString() + " - " + categoriesOfSpendings[0];
+                lblSpended2.Text = "";
+                lblSpended3.Text = "";
+                lblSpended4.Text = "";
+                lblSpended5.Text = "";
+            }else if(handleSize == 2)
+            {
+                lblSpended1.Text = totalSpendings[0].ToString() + " - " + categoriesOfSpendings[0];
+                lblSpended2.Text = totalSpendings[1].ToString() + " - " + categoriesOfSpendings[1];
+                lblSpended3.Text = "";
+                lblSpended4.Text = "";
+                lblSpended5.Text = "";
+            }else if(handleSize == 3)
+            {
+                lblSpended1.Text = totalSpendings[0].ToString() + " - " + categoriesOfSpendings[0];
+                lblSpended2.Text = totalSpendings[1].ToString() + " - " + categoriesOfSpendings[1];
+                lblSpended3.Text = totalSpendings[2].ToString() + " - " + categoriesOfSpendings[2];
+                lblSpended4.Text = "";
+                lblSpended5.Text = "";
+            }else if(handleSize == 4)
+            {
+                lblSpended1.Text = totalSpendings[0].ToString() + " - " + categoriesOfSpendings[0];
+                lblSpended2.Text = totalSpendings[1].ToString() + " - " + categoriesOfSpendings[1];
+                lblSpended3.Text = totalSpendings[2].ToString() + " - " + categoriesOfSpendings[2];
+                lblSpended4.Text = totalSpendings[3].ToString() + " - " + categoriesOfSpendings[3];
+                lblSpended5.Text = "";
+            }else if(handleSize == 5)
+            {
+                lblSpended1.Text = totalSpendings[0].ToString() + " - " + categoriesOfSpendings[0];
+                lblSpended2.Text = totalSpendings[1].ToString() + " - " + categoriesOfSpendings[1];
+                lblSpended3.Text = totalSpendings[2].ToString() + " - " + categoriesOfSpendings[2];
+                lblSpended4.Text = totalSpendings[3].ToString() + " - " + categoriesOfSpendings[3];
+                lblSpended5.Text = totalSpendings[4].ToString() + " - " + categoriesOfSpendings[4];
             }
         }
 
