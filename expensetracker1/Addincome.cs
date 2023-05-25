@@ -65,7 +65,7 @@ namespace expensetracker1
         private void btnAdd_Click(object sender, EventArgs e)
         {
             float amount = float.Parse(txtamount.Text.ToString(), CultureInfo.InvariantCulture.NumberFormat);
-            MessageBox.Show("amount" + amount);
+            
         }
     }
 }

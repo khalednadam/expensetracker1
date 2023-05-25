@@ -35,7 +35,7 @@ namespace expensetracker1
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            DashboardForm dashboardForm = new DashboardForm();
+            DashboardForm dashboardForm = new DashboardForm("k");
             dashboardForm.Show();
         }
 
