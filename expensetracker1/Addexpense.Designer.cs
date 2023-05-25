@@ -37,7 +37,6 @@ namespace expensetracker1
             this.txtamount = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dateexpense = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
-            this.drpbtnCategory = new ComponentFactory.Krypton.Toolkit.KryptonDropButton();
             this.label7 = new System.Windows.Forms.Label();
             this.btnAdd = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
@@ -51,7 +50,10 @@ namespace expensetracker1
             this.btnDashboard = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.drpbtnCategory = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.buttonSpecAny1 = new ComponentFactory.Krypton.Toolkit.ButtonSpecAny();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.drpbtnCategory)).BeginInit();
             this.SuspendLayout();
             // 
             // label4
@@ -69,7 +71,7 @@ namespace expensetracker1
             // txtDiscription
             // 
             this.txtDiscription.Location = new System.Drawing.Point(412, 336);
-            this.txtDiscription.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDiscription.Margin = new System.Windows.Forms.Padding(2);
             this.txtDiscription.Multiline = true;
             this.txtDiscription.Name = "txtDiscription";
             this.txtDiscription.Size = new System.Drawing.Size(348, 148);
@@ -112,7 +114,7 @@ namespace expensetracker1
             // txtamount
             // 
             this.txtamount.Location = new System.Drawing.Point(412, 158);
-            this.txtamount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtamount.Margin = new System.Windows.Forms.Padding(2);
             this.txtamount.Multiline = true;
             this.txtamount.Name = "txtamount";
             this.txtamount.Size = new System.Drawing.Size(348, 35);
@@ -144,7 +146,7 @@ namespace expensetracker1
             // 
             this.dateexpense.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateexpense.Location = new System.Drawing.Point(412, 249);
-            this.dateexpense.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateexpense.Margin = new System.Windows.Forms.Padding(2);
             this.dateexpense.Name = "dateexpense";
             this.dateexpense.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.dateexpense.Size = new System.Drawing.Size(166, 27);
@@ -153,27 +155,6 @@ namespace expensetracker1
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.dateexpense.StateCommon.Border.Rounding = 10;
             this.dateexpense.TabIndex = 29;
-            // 
-            // drpbtnCategory
-            // 
-            this.drpbtnCategory.Location = new System.Drawing.Point(601, 249);
-            this.drpbtnCategory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.drpbtnCategory.Name = "drpbtnCategory";
-            this.drpbtnCategory.Size = new System.Drawing.Size(159, 25);
-            this.drpbtnCategory.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.drpbtnCategory.StateCommon.Back.Color2 = System.Drawing.Color.White;
-            this.drpbtnCategory.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.drpbtnCategory.StateCommon.Border.Rounding = 10;
-            this.drpbtnCategory.StateCommon.Content.LongText.Color1 = System.Drawing.Color.Black;
-            this.drpbtnCategory.StateCommon.Content.LongText.Color2 = System.Drawing.Color.Black;
-            this.drpbtnCategory.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
-            this.drpbtnCategory.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.Black;
-            this.drpbtnCategory.TabIndex = 30;
-            this.drpbtnCategory.Values.ExtraText = "Food,";
-            this.drpbtnCategory.Values.Text = "Food,\r\nClothing \r\nGroceries\r\nHealth\r\nTransportation,\r\nutilities,\r\nEntertainment, " +
-    "\r\nHousing,\r\nPersonal care,\r\nTravel,\r\nOther\r\n";
             // 
             // label7
             // 
@@ -190,7 +171,7 @@ namespace expensetracker1
             // btnAdd
             // 
             this.btnAdd.Location = new System.Drawing.Point(526, 524);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(110, 46);
             this.btnAdd.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
@@ -229,7 +210,7 @@ namespace expensetracker1
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, 9);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(223, 596);
             this.panel1.TabIndex = 33;
@@ -238,7 +219,7 @@ namespace expensetracker1
             // 
             this.btnLogout.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.NavigatorOverflow;
             this.btnLogout.Location = new System.Drawing.Point(62, 400);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.btnLogout.Size = new System.Drawing.Size(232, 52);
@@ -251,7 +232,7 @@ namespace expensetracker1
             // 
             this.btnAboutus.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.NavigatorOverflow;
             this.btnAboutus.Location = new System.Drawing.Point(62, 352);
-            this.btnAboutus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAboutus.Margin = new System.Windows.Forms.Padding(2);
             this.btnAboutus.Name = "btnAboutus";
             this.btnAboutus.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.btnAboutus.Size = new System.Drawing.Size(232, 52);
@@ -264,7 +245,7 @@ namespace expensetracker1
             // 
             this.btnPrefrences.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.NavigatorOverflow;
             this.btnPrefrences.Location = new System.Drawing.Point(62, 304);
-            this.btnPrefrences.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPrefrences.Margin = new System.Windows.Forms.Padding(2);
             this.btnPrefrences.Name = "btnPrefrences";
             this.btnPrefrences.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.btnPrefrences.Size = new System.Drawing.Size(232, 52);
@@ -277,7 +258,7 @@ namespace expensetracker1
             // 
             this.btnTotalspendings.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.NavigatorOverflow;
             this.btnTotalspendings.Location = new System.Drawing.Point(62, 255);
-            this.btnTotalspendings.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTotalspendings.Margin = new System.Windows.Forms.Padding(2);
             this.btnTotalspendings.Name = "btnTotalspendings";
             this.btnTotalspendings.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.btnTotalspendings.Size = new System.Drawing.Size(232, 52);
@@ -290,7 +271,7 @@ namespace expensetracker1
             // 
             this.btnAddexpence.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.NavigatorOverflow;
             this.btnAddexpence.Location = new System.Drawing.Point(62, 209);
-            this.btnAddexpence.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddexpence.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddexpence.Name = "btnAddexpence";
             this.btnAddexpence.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.btnAddexpence.Size = new System.Drawing.Size(232, 52);
@@ -302,7 +283,7 @@ namespace expensetracker1
             // 
             this.btnAddincome.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.NavigatorOverflow;
             this.btnAddincome.Location = new System.Drawing.Point(62, 163);
-            this.btnAddincome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddincome.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddincome.Name = "btnAddincome";
             this.btnAddincome.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.btnAddincome.Size = new System.Drawing.Size(232, 52);
@@ -315,7 +296,7 @@ namespace expensetracker1
             // 
             this.btnDashboard.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.NavigatorOverflow;
             this.btnDashboard.Location = new System.Drawing.Point(62, 122);
-            this.btnDashboard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDashboard.Margin = new System.Windows.Forms.Padding(2);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.btnDashboard.Size = new System.Drawing.Size(232, 52);
@@ -345,16 +326,49 @@ namespace expensetracker1
             this.label1.TabIndex = 4;
             this.label1.Text = "Khaled Nadam";
             // 
+            // drpbtnCategory
+            // 
+            this.drpbtnCategory.ButtonSpecs.AddRange(new ComponentFactory.Krypton.Toolkit.ButtonSpecAny[] {
+            this.buttonSpecAny1});
+            this.drpbtnCategory.DropButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Standalone;
+            this.drpbtnCategory.DropDownWidth = 129;
+            this.drpbtnCategory.Items.AddRange(new object[] {
+            "Food & Restaurants",
+            "Clothing",
+            "Health and Wellness",
+            "Groceries",
+            "Transportation",
+            "Utilities",
+            "Entertainment",
+            "Housing",
+            "Personal Care",
+            "Travel",
+            "Other "});
+            this.drpbtnCategory.Location = new System.Drawing.Point(602, 249);
+            this.drpbtnCategory.Name = "drpbtnCategory";
+            this.drpbtnCategory.Size = new System.Drawing.Size(142, 27);
+            this.drpbtnCategory.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.drpbtnCategory.StateCommon.ComboBox.Border.Rounding = 10;
+            this.drpbtnCategory.TabIndex = 35;
+            this.drpbtnCategory.Text = "Select a category";
+            // 
+            // buttonSpecAny1
+            // 
+            this.buttonSpecAny1.ColorMap = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(189)))), ((int)(((byte)(209)))));
+            this.buttonSpecAny1.UniqueName = "63E3B456BFA6479F1682F0E5B43EA6CF";
+            // 
             // Addexpense
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
             this.ClientSize = new System.Drawing.Size(1020, 605);
+            this.Controls.Add(this.drpbtnCategory);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.drpbtnCategory);
             this.Controls.Add(this.dateexpense);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtDiscription);
@@ -363,7 +377,7 @@ namespace expensetracker1
             this.Controls.Add(this.txtamount);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Addexpense";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
@@ -379,6 +393,7 @@ namespace expensetracker1
             this.Load += new System.EventHandler(this.Addexpense_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.drpbtnCategory)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -392,7 +407,6 @@ namespace expensetracker1
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtamount;
         private System.Windows.Forms.Label label2;
         private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker dateexpense;
-        private ComponentFactory.Krypton.Toolkit.KryptonDropButton drpbtnCategory;
         private System.Windows.Forms.Label label7;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnAdd;
         private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
@@ -406,5 +420,7 @@ namespace expensetracker1
         public ComponentFactory.Krypton.Toolkit.KryptonButton btnDashboard;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox drpbtnCategory;
+        private ComponentFactory.Krypton.Toolkit.ButtonSpecAny buttonSpecAny1;
     }
 }
