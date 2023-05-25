@@ -9,17 +9,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComponentFactory.Krypton.Toolkit;
 using System.Globalization;
-
+using MySql.Data.MySqlClient;
 namespace expensetracker1
 {
 
     public partial class Addincome : KryptonForm
     {
-
-        public Addincome()
+        private MySqlConnection connection;
+        private const string connectionString = "server=localhost;database=tracker;user=root;password=";
+        public int id;
+        public Addincome(int id)
         {
             InitializeComponent();
-           
+            this.id = id;
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -59,12 +61,45 @@ namespace expensetracker1
 
         private void Addincome_Load(object sender, EventArgs e)
         {
-
+            connection = new MySqlConnection(connectionString);
+            connection.Open();
+            MessageBox.Show("Connection is open.");
+            if (connection.State == ConnectionState.Open)
+            {
+                // Connection is open
+                Console.WriteLine("Connection is open.");
+            }
+            else
+            {
+                // Connection is not open
+                Console.WriteLine("Connection is not open.");
+            }
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            float amount = float.Parse(txtamount.Text.ToString(), CultureInfo.InvariantCulture.NumberFormat);
+            try
+            {
+                float amount = float.Parse(txtamount.Text.ToString(), CultureInfo.InvariantCulture.NumberFormat);
+                string description = txtDiscription.Text.ToString();
+                string date = dateAddincome.Value.ToString();
+                int userid = id;
+                if(amount != 0)
+                {
+                    string Query = "insert into income(amount, description, date, userId) " +
+                "values ( '" + amount + "','" + description + "', '" + date + "', '"+ id + "' )";
+                    MySqlConnection MyConn2 = new MySqlConnection(connectionString);
+                    MySqlCommand MyCommand2 = new MySqlCommand(Query, MyConn2);
+                    MySqlDataReader MyReader2;
+                    MyConn2.Open();
+                    MyReader2 = MyCommand2.ExecuteReader();
+                    MessageBox.Show("Income added successfully.");
+                }
+
+            }catch(Exception err)
+            {
+                MessageBox.Show( "" + err);
+            }
             
         }
     }

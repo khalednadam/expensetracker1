@@ -35,14 +35,14 @@ namespace expensetracker1
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            DashboardForm dashboardForm = new DashboardForm("k");
+            DashboardForm dashboardForm = new DashboardForm(1);
             dashboardForm.Show();
         }
 
         private void kryptonButton2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Addincome addincome = new Addincome();
+            Addincome addincome = new Addincome(1);
             addincome.Show();
         }
 
