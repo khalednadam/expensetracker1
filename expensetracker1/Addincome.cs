@@ -122,14 +122,14 @@ namespace expensetracker1
         private void btnTotalspendings_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Totalspending totalspending = new Totalspending();
+            Totalspending totalspending = new Totalspending(id);
             totalspending.Show();
         }
 
         private void btnPrefrences_Click(object sender, EventArgs e)
         {
             this.Hide();
-            prefrencesForm prefrencesForm = new prefrencesForm();
+            prefrencesForm prefrencesForm = new prefrencesForm(id);
             prefrencesForm.Show();
         }
 
@@ -143,7 +143,7 @@ namespace expensetracker1
         private void btnLogout_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Logout logout = new Logout();
+            Logout logout = new Logout(id);
             logout.Show();
         }
 

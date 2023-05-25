@@ -13,9 +13,11 @@ namespace expensetracker1
 {
     public partial class Totalspendingmain : KryptonForm
     {
-        public Totalspendingmain()
+        public int id;
+        public Totalspendingmain(int id)
         {
             InitializeComponent();
+            this.id = id;
         }
 
         private void Totalspendingmain_Load(object sender, EventArgs e)
@@ -41,6 +43,13 @@ namespace expensetracker1
         private void kryptonPalette1_PalettePaint(object sender, PaletteLayoutEventArgs e)
         {
 
+        }
+
+        private void btnSpendingdetails_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Totalspending totalspending = new Totalspending(id);
+            totalspending.Show();
         }
     }
 }

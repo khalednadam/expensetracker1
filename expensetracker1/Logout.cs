@@ -14,9 +14,11 @@ namespace expensetracker1
 {
     public partial class Logout : KryptonForm
     {
-        public Logout()
+        public int id;
+        public Logout(int id)
         {
             InitializeComponent();
+            this.id = id;
         }
 
         private void Logout_Load(object sender, EventArgs e)
@@ -35,35 +37,35 @@ namespace expensetracker1
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            DashboardForm dashboardForm = new DashboardForm(1);
+            DashboardForm dashboardForm = new DashboardForm(id);
             dashboardForm.Show();
         }
 
         private void kryptonButton2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Addincome addincome = new Addincome(1);
+            Addincome addincome = new Addincome(id);
             addincome.Show();
         }
 
         private void kryptonButton3_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Addexpense addexpense = new Addexpense(1);   
+            Addexpense addexpense = new Addexpense(id);   
             addexpense.Show();
         }
 
         private void kryptonButton4_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Totalspending totalspending   = new Totalspending();
+            Totalspending totalspending   = new Totalspending(id);
             totalspending.Show();
         }
 
         private void kryptonButton6_Click(object sender, EventArgs e)
         {
            this.Hide();
-           prefrencesForm prefrencesForm = new prefrencesForm();
+           prefrencesForm prefrencesForm = new prefrencesForm(id);
            prefrencesForm.Show();
         }
 
@@ -76,9 +78,7 @@ namespace expensetracker1
 
         private void kryptonButton8_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Logout logout = new Logout();
-            logout.Show();
+            
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

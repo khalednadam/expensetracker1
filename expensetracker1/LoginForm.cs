@@ -54,7 +54,7 @@ namespace expensetracker1
 
                     int id = Convert.ToInt32(command.ExecuteScalar());
                      
-                    if (id != -1)
+                    if (id != 0)
                     {
                         //MessageBox.Show("Login successful!");
                         // Perform actions after successful login
