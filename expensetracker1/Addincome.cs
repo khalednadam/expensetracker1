@@ -102,5 +102,47 @@ namespace expensetracker1
             }
             
         }
+
+        private void btnAddexpence_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Addexpense addexpense = new Addexpense();
+            addexpense.Show();
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            DashboardForm dashboardForm = new DashboardForm(1);
+            dashboardForm.Show();
+        }
+
+        private void btnTotalspendings_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Totalspending totalspending = new Totalspending();
+            totalspending.Show();
+        }
+
+        private void btnPrefrences_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            prefrencesForm prefrencesForm = new prefrencesForm();
+            prefrencesForm.Show();
+        }
+
+        private void btnAboutus_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AboutUsForm aboutUsForm = new AboutUsForm();
+            aboutUsForm.Show();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Logout logout = new Logout();
+            logout.Show();
+        }
     }
 }

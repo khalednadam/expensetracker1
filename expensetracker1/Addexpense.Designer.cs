@@ -245,6 +245,7 @@ namespace expensetracker1
             this.btnLogout.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Anek Bangla Medium", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.TabIndex = 10;
             this.btnLogout.Values.Text = "Log Out";
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnAboutus
             // 
@@ -257,6 +258,7 @@ namespace expensetracker1
             this.btnAboutus.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Anek Bangla Medium", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAboutus.TabIndex = 9;
             this.btnAboutus.Values.Text = "About Us";
+            this.btnAboutus.Click += new System.EventHandler(this.btnAboutus_Click);
             // 
             // btnPrefrences
             // 
@@ -269,6 +271,7 @@ namespace expensetracker1
             this.btnPrefrences.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Anek Bangla Medium", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrefrences.TabIndex = 8;
             this.btnPrefrences.Values.Text = "Prefrences";
+            this.btnPrefrences.Click += new System.EventHandler(this.btnPrefrences_Click);
             // 
             // btnTotalspendings
             // 
@@ -281,6 +284,7 @@ namespace expensetracker1
             this.btnTotalspendings.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Anek Bangla Medium", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTotalspendings.TabIndex = 7;
             this.btnTotalspendings.Values.Text = "Total spendings";
+            this.btnTotalspendings.Click += new System.EventHandler(this.btnTotalspendings_Click);
             // 
             // btnAddexpence
             // 
@@ -305,6 +309,7 @@ namespace expensetracker1
             this.btnAddincome.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Anek Bangla Medium", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddincome.TabIndex = 5;
             this.btnAddincome.Values.Text = "Add Income";
+            this.btnAddincome.Click += new System.EventHandler(this.btnAddincome_Click);
             // 
             // btnDashboard
             // 
@@ -317,6 +322,7 @@ namespace expensetracker1
             this.btnDashboard.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Anek Bangla Medium", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.TabIndex = 0;
             this.btnDashboard.Values.Text = "Dashboard";
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // label3
             // 
