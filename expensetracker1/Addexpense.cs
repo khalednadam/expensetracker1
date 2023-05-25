@@ -48,14 +48,14 @@ namespace expensetracker1
             {
                 float amount = float.Parse(txtamount.Text.ToString(), CultureInfo.InvariantCulture.NumberFormat);
                 string description = txtDiscription.Text.ToString();
-                string date = dateexpense.Value.ToString();
+                string date = dateexpense.Value.ToString("yyyy-MM-dd");
                 string category = drpbtnCategory.SelectedItem.ToString();
                 
                 int userid = id;
                 if (amount != 0)
                 {
                     string Query = "insert into spending(amount, description, date, category, userId) " +
-                "values ( '" + amount + "','" + description + "', '" + date + "', '" + category + "',  '" + id + "' )";
+                "values ( '" + (float) amount + "','" + description + "', '" + date + "', '" + category + "',  '" + id + "' )";
                     MySqlConnection MyConn2 = new MySqlConnection(connectionString);
                     MySqlCommand MyCommand2 = new MySqlCommand(Query, MyConn2);
                     MySqlDataReader MyReader2;
@@ -123,8 +123,11 @@ namespace expensetracker1
 
         private void dateexpense_ValueChanged(object sender, EventArgs e)
         {
-            dateTime = dateexpense.Value;
-            MessageBox.Show("" + dateTime);
+            int year = dateexpense.Value.Year;
+            int month = dateexpense.Value.Month;
+            int day = dateexpense.Value.Day;
+            DateTime dateTime1 = new DateTime(year, month, day);
+            
         }
     }
 }
