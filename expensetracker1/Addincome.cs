@@ -94,6 +94,8 @@ namespace expensetracker1
                     MyConn2.Open();
                     MyReader2 = MyCommand2.ExecuteReader();
                     MessageBox.Show("Income added successfully.");
+                    txtamount.Text = "";
+                    txtDiscription.Text = "";
                 }
 
             }catch(Exception err)

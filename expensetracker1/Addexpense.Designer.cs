@@ -144,7 +144,8 @@ namespace expensetracker1
             // 
             // dateexpense
             // 
-            this.dateexpense.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateexpense.CustomFormat = "dd / mm / yyyy";
+            this.dateexpense.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateexpense.Location = new System.Drawing.Point(412, 249);
             this.dateexpense.Margin = new System.Windows.Forms.Padding(2);
             this.dateexpense.Name = "dateexpense";
@@ -155,6 +156,7 @@ namespace expensetracker1
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.dateexpense.StateCommon.Border.Rounding = 10;
             this.dateexpense.TabIndex = 29;
+            this.dateexpense.ValueChanged += new System.EventHandler(this.dateexpense_ValueChanged);
             // 
             // label7
             // 

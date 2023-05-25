@@ -14,6 +14,7 @@ namespace expensetracker1
 {
     public partial class Addexpense : KryptonForm
     {
+        DateTime dateTime;
         private MySqlConnection connection;
         private const string connectionString = "server=localhost;database=tracker;user=root;password=";
         public int id;
@@ -65,6 +66,7 @@ namespace expensetracker1
                     txtDiscription.Text = "";
                     drpbtnCategory.Text = "";
                     drpbtnCategory.SelectedItem = "";
+                   
                     // TODO: Fix category dropdown
 
 
@@ -117,6 +119,12 @@ namespace expensetracker1
             this.Hide();
             Logout logout = new Logout();
             logout.Show();
+        }
+
+        private void dateexpense_ValueChanged(object sender, EventArgs e)
+        {
+            dateTime = dateexpense.Value;
+            MessageBox.Show("" + dateTime);
         }
     }
 }
