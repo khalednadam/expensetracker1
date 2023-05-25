@@ -65,7 +65,7 @@ namespace expensetracker1
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(2, -5);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(223, 596);
             this.panel1.TabIndex = 6;
@@ -74,7 +74,7 @@ namespace expensetracker1
             // 
             this.btnLogout.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.NavigatorOverflow;
             this.btnLogout.Location = new System.Drawing.Point(62, 400);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.btnLogout.Size = new System.Drawing.Size(232, 52);
@@ -87,7 +87,7 @@ namespace expensetracker1
             // 
             this.btnAboutus.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.NavigatorOverflow;
             this.btnAboutus.Location = new System.Drawing.Point(62, 352);
-            this.btnAboutus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAboutus.Margin = new System.Windows.Forms.Padding(2);
             this.btnAboutus.Name = "btnAboutus";
             this.btnAboutus.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.btnAboutus.Size = new System.Drawing.Size(232, 52);
@@ -100,7 +100,7 @@ namespace expensetracker1
             // 
             this.btnPrefrences.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.NavigatorOverflow;
             this.btnPrefrences.Location = new System.Drawing.Point(62, 304);
-            this.btnPrefrences.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPrefrences.Margin = new System.Windows.Forms.Padding(2);
             this.btnPrefrences.Name = "btnPrefrences";
             this.btnPrefrences.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.btnPrefrences.Size = new System.Drawing.Size(232, 52);
@@ -113,7 +113,7 @@ namespace expensetracker1
             // 
             this.btnTotalspendings.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.NavigatorOverflow;
             this.btnTotalspendings.Location = new System.Drawing.Point(62, 255);
-            this.btnTotalspendings.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTotalspendings.Margin = new System.Windows.Forms.Padding(2);
             this.btnTotalspendings.Name = "btnTotalspendings";
             this.btnTotalspendings.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.btnTotalspendings.Size = new System.Drawing.Size(232, 52);
@@ -126,7 +126,7 @@ namespace expensetracker1
             // 
             this.btnAddexpence.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.NavigatorOverflow;
             this.btnAddexpence.Location = new System.Drawing.Point(62, 209);
-            this.btnAddexpence.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddexpence.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddexpence.Name = "btnAddexpence";
             this.btnAddexpence.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.btnAddexpence.Size = new System.Drawing.Size(232, 52);
@@ -139,7 +139,7 @@ namespace expensetracker1
             // 
             this.btnAddincome.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.NavigatorOverflow;
             this.btnAddincome.Location = new System.Drawing.Point(62, 163);
-            this.btnAddincome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddincome.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddincome.Name = "btnAddincome";
             this.btnAddincome.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.btnAddincome.Size = new System.Drawing.Size(232, 52);
@@ -151,7 +151,7 @@ namespace expensetracker1
             // 
             this.btnDashboard.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.NavigatorOverflow;
             this.btnDashboard.Location = new System.Drawing.Point(62, 122);
-            this.btnDashboard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDashboard.Margin = new System.Windows.Forms.Padding(2);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.btnDashboard.Size = new System.Drawing.Size(232, 52);
@@ -210,7 +210,7 @@ namespace expensetracker1
             // txtDiscription
             // 
             this.txtDiscription.Location = new System.Drawing.Point(364, 328);
-            this.txtDiscription.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDiscription.Margin = new System.Windows.Forms.Padding(2);
             this.txtDiscription.Multiline = true;
             this.txtDiscription.Name = "txtDiscription";
             this.txtDiscription.Size = new System.Drawing.Size(320, 148);
@@ -256,7 +256,7 @@ namespace expensetracker1
             // txtamount
             // 
             this.txtamount.Location = new System.Drawing.Point(364, 135);
-            this.txtamount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtamount.Margin = new System.Windows.Forms.Padding(2);
             this.txtamount.Multiline = true;
             this.txtamount.Name = "txtamount";
             this.txtamount.Size = new System.Drawing.Size(320, 35);
@@ -276,7 +276,7 @@ namespace expensetracker1
             // btnAdd
             // 
             this.btnAdd.Location = new System.Drawing.Point(458, 516);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(110, 46);
             this.btnAdd.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
@@ -299,7 +299,7 @@ namespace expensetracker1
             this.dateAddincome.CustomFormat = "yyyy-MM-dd";
             this.dateAddincome.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateAddincome.Location = new System.Drawing.Point(364, 231);
-            this.dateAddincome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateAddincome.Margin = new System.Windows.Forms.Padding(2);
             this.dateAddincome.Name = "dateAddincome";
             this.dateAddincome.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.dateAddincome.Size = new System.Drawing.Size(320, 27);
@@ -334,7 +334,7 @@ namespace expensetracker1
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Addincome";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
