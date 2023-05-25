@@ -191,6 +191,9 @@ namespace expensetracker1
             // 
             // kryptonPalette1
             // 
+            this.kryptonPalette1.ButtonSpecs.DropDown.Image = global::expensetracker1.Properties.Resources.minimize;
+            this.kryptonPalette1.ButtonSpecs.DropDown.ImageStates.ImagePressed = global::expensetracker1.Properties.Resources.minimize;
+            this.kryptonPalette1.ButtonSpecs.DropDown.ImageStates.ImageTracking = global::expensetracker1.Properties.Resources.minimize;
             this.kryptonPalette1.ButtonSpecs.FormClose.Image = global::expensetracker1.Properties.Resources.close;
             this.kryptonPalette1.ButtonSpecs.FormClose.ImageStates.ImagePressed = global::expensetracker1.Properties.Resources.close;
             this.kryptonPalette1.ButtonSpecs.FormClose.ImageStates.ImageTracking = global::expensetracker1.Properties.Resources.close;
@@ -330,6 +333,7 @@ namespace expensetracker1
             // 
             this.drpbtnCategory.ButtonSpecs.AddRange(new ComponentFactory.Krypton.Toolkit.ButtonSpecAny[] {
             this.buttonSpecAny1});
+            this.drpbtnCategory.DropBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ButtonStandalone;
             this.drpbtnCategory.DropButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Standalone;
             this.drpbtnCategory.DropDownWidth = 129;
             this.drpbtnCategory.Items.AddRange(new object[] {
@@ -346,18 +350,19 @@ namespace expensetracker1
             "Other "});
             this.drpbtnCategory.Location = new System.Drawing.Point(602, 249);
             this.drpbtnCategory.Name = "drpbtnCategory";
+            this.drpbtnCategory.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.drpbtnCategory.Size = new System.Drawing.Size(142, 27);
             this.drpbtnCategory.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.drpbtnCategory.StateCommon.ComboBox.Border.Rounding = 10;
             this.drpbtnCategory.TabIndex = 35;
-            this.drpbtnCategory.Text = "Select a category";
+            this.drpbtnCategory.Text = "select a category";
             // 
             // buttonSpecAny1
             // 
-            this.buttonSpecAny1.ColorMap = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(189)))), ((int)(((byte)(209)))));
-            this.buttonSpecAny1.UniqueName = "63E3B456BFA6479F1682F0E5B43EA6CF";
+            this.buttonSpecAny1.ColorMap = System.Drawing.Color.Blue;
+            this.buttonSpecAny1.UniqueName = "65007909A0BF4F72D88283DE8526DFBB";
             // 
             // Addexpense
             // 
