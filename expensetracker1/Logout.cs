@@ -72,7 +72,7 @@ namespace expensetracker1
         private void kryptonButton7_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AboutUsForm aboutForm = new AboutUsForm();
+            AboutUsForm aboutForm = new AboutUsForm(id);
             aboutForm.Show();
         }
 

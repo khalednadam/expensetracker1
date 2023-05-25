@@ -213,7 +213,7 @@ namespace expensetracker1
         private void btnAboutus_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AboutUsForm aboutusform = new AboutUsForm();
+            AboutUsForm aboutusform = new AboutUsForm(id);
             aboutusform.Show();
         }
 
