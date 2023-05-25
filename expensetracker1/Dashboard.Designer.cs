@@ -76,7 +76,7 @@ namespace expensetracker1
             this.label1.Font = new System.Drawing.Font("Anek Bangla Medium", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(17, 63);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(177, 47);
+            this.label1.Size = new System.Drawing.Size(171, 45);
             this.label1.TabIndex = 4;
             this.label1.Text = "Khaled Nadam";
             // 
@@ -109,6 +109,7 @@ namespace expensetracker1
             this.btnLogout.Size = new System.Drawing.Size(309, 64);
             this.btnLogout.TabIndex = 11;
             this.btnLogout.Values.Text = "Logout";
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnAboutus
             // 
@@ -120,6 +121,7 @@ namespace expensetracker1
             this.btnAboutus.Size = new System.Drawing.Size(309, 64);
             this.btnAboutus.TabIndex = 10;
             this.btnAboutus.Values.Text = "About Us";
+            this.btnAboutus.Click += new System.EventHandler(this.btnAboutus_Click);
             // 
             // btnPrefrences
             // 
@@ -143,6 +145,7 @@ namespace expensetracker1
             this.btnTotalspending.Size = new System.Drawing.Size(309, 64);
             this.btnTotalspending.TabIndex = 7;
             this.btnTotalspending.Values.Text = "Total Spending";
+            this.btnTotalspending.Click += new System.EventHandler(this.btnTotalspending_Click);
             // 
             // btnAddexpence
             // 
@@ -154,6 +157,7 @@ namespace expensetracker1
             this.btnAddexpence.Size = new System.Drawing.Size(309, 64);
             this.btnAddexpence.TabIndex = 6;
             this.btnAddexpence.Values.Text = "Add Expense";
+            this.btnAddexpence.Click += new System.EventHandler(this.btnAddexpence_Click);
             // 
             // btnAddincome
             // 
@@ -165,6 +169,7 @@ namespace expensetracker1
             this.btnAddincome.Size = new System.Drawing.Size(309, 64);
             this.btnAddincome.TabIndex = 5;
             this.btnAddincome.Values.Text = "Add Income";
+            this.btnAddincome.Click += new System.EventHandler(this.btnAddincome_Click);
             // 
             // btnDashboard
             // 
@@ -193,7 +198,7 @@ namespace expensetracker1
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(139)))), ((int)(((byte)(0)))));
             this.label2.Location = new System.Drawing.Point(302, 25);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(186, 64);
+            this.label2.Size = new System.Drawing.Size(180, 63);
             this.label2.TabIndex = 12;
             this.label2.Text = "Dashboard";
             // 
@@ -204,7 +209,7 @@ namespace expensetracker1
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(139)))), ((int)(((byte)(0)))));
             this.label4.Location = new System.Drawing.Point(305, 89);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(239, 47);
+            this.label4.Size = new System.Drawing.Size(227, 45);
             this.label4.TabIndex = 13;
             this.label4.Text = "Spendings This Month";
             // 
@@ -226,7 +231,7 @@ namespace expensetracker1
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(139)))), ((int)(((byte)(0)))));
             this.label6.Location = new System.Drawing.Point(309, 258);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(183, 47);
+            this.label6.Size = new System.Drawing.Size(173, 45);
             this.label6.TabIndex = 15;
             this.label6.Text = "Last 5 expences ";
             // 
@@ -363,6 +368,7 @@ namespace expensetracker1
             this.btnIncome.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.btnIncome.TabIndex = 27;
             this.btnIncome.Values.Text = "Add Income";
+            this.btnIncome.Click += new System.EventHandler(this.btnIncome_Click);
             // 
             // btnExpence
             // 
@@ -382,6 +388,7 @@ namespace expensetracker1
             this.btnExpence.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.btnExpence.TabIndex = 28;
             this.btnExpence.Values.Text = "Add Expence";
+            this.btnExpence.Click += new System.EventHandler(this.btnExpence_Click);
             // 
             // DashboardForm
             // 

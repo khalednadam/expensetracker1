@@ -31,5 +31,59 @@ namespace expensetracker1
             LoginForm.ShowDialog();
             this.Close();
         }
+
+        private void kryptonButton1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            DashboardForm dashboardForm = new DashboardForm();
+            dashboardForm.Show();
+        }
+
+        private void kryptonButton2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Addincome addincome = new Addincome();
+            addincome.Show();
+        }
+
+        private void kryptonButton3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Addexpense addexpense = new Addexpense();   
+            addexpense.Show();
+        }
+
+        private void kryptonButton4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Totalspending totalspending   = new Totalspending();
+            totalspending.Show();
+        }
+
+        private void kryptonButton6_Click(object sender, EventArgs e)
+        {
+           this.Hide();
+           prefrencesForm prefrencesForm = new prefrencesForm();
+           prefrencesForm.Show();
+        }
+
+        private void kryptonButton7_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AboutUsForm aboutForm = new AboutUsForm();
+            aboutForm.Show();
+        }
+
+        private void kryptonButton8_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Logout logout = new Logout();
+            logout.Show();
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

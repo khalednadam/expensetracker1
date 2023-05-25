@@ -112,6 +112,7 @@
             this.kryptonButton8.Size = new System.Drawing.Size(309, 64);
             this.kryptonButton8.TabIndex = 11;
             this.kryptonButton8.Values.Text = "Logout";
+            this.kryptonButton8.Click += new System.EventHandler(this.kryptonButton8_Click);
             // 
             // kryptonButton7
             // 
@@ -123,6 +124,7 @@
             this.kryptonButton7.Size = new System.Drawing.Size(309, 64);
             this.kryptonButton7.TabIndex = 10;
             this.kryptonButton7.Values.Text = "About Us";
+            this.kryptonButton7.Click += new System.EventHandler(this.kryptonButton7_Click);
             // 
             // kryptonButton6
             // 
@@ -134,6 +136,7 @@
             this.kryptonButton6.Size = new System.Drawing.Size(309, 64);
             this.kryptonButton6.TabIndex = 9;
             this.kryptonButton6.Values.Text = "Preferences";
+            this.kryptonButton6.Click += new System.EventHandler(this.kryptonButton6_Click);
             // 
             // kryptonButton4
             // 
@@ -145,6 +148,7 @@
             this.kryptonButton4.Size = new System.Drawing.Size(309, 64);
             this.kryptonButton4.TabIndex = 7;
             this.kryptonButton4.Values.Text = "Total Spending";
+            this.kryptonButton4.Click += new System.EventHandler(this.kryptonButton4_Click);
             // 
             // kryptonButton3
             // 
@@ -156,6 +160,7 @@
             this.kryptonButton3.Size = new System.Drawing.Size(309, 64);
             this.kryptonButton3.TabIndex = 6;
             this.kryptonButton3.Values.Text = "Add Expense";
+            this.kryptonButton3.Click += new System.EventHandler(this.kryptonButton3_Click);
             // 
             // kryptonButton2
             // 
@@ -167,6 +172,7 @@
             this.kryptonButton2.Size = new System.Drawing.Size(309, 64);
             this.kryptonButton2.TabIndex = 5;
             this.kryptonButton2.Values.Text = "Add Income";
+            this.kryptonButton2.Click += new System.EventHandler(this.kryptonButton2_Click);
             // 
             // kryptonButton1
             // 
@@ -178,6 +184,7 @@
             this.kryptonButton1.Size = new System.Drawing.Size(309, 64);
             this.kryptonButton1.TabIndex = 0;
             this.kryptonButton1.Values.Text = "Dashboard";
+            this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
             // 
             // label3
             // 
@@ -275,6 +282,7 @@
             this.btnCancel.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.TabIndex = 14;
             this.btnCancel.Values.Text = "Cancel";
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // label4
             // 

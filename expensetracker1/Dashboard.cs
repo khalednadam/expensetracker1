@@ -24,7 +24,7 @@ namespace expensetracker1
 
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void kryptonLabel1_Paint(object sender, PaintEventArgs e)
@@ -44,6 +44,11 @@ namespace expensetracker1
 
         private void kryptonButton6_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            prefrencesForm preferences = new prefrencesForm();
+            preferences.Show();
+
+
 
         }
 
@@ -101,6 +106,59 @@ namespace expensetracker1
         private void label14_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAddincome_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Addincome addincome = new Addincome();
+            addincome.Show();
+
+        }
+
+        private void btnAddexpence_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Addexpense addexpense = new Addexpense();
+            addexpense.Show();
+
+        }
+
+        private void btnTotalspending_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Totalspending totalspending = new Totalspending();
+            totalspending.Show();
+        }
+
+        private void btnAboutus_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AboutUsForm aboutusform = new AboutUsForm();
+            aboutusform.Show();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Logout logout = new Logout();
+            logout.Show();
+        }
+
+        private void btnExpence_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Addexpense addexpense = new Addexpense();
+            addexpense.Show();
+
+
+        }
+
+        private void btnIncome_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Addincome addincome = new Addincome();
+            addincome.Show();
         }
     }
 }
