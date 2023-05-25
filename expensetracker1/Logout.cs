@@ -29,9 +29,8 @@ namespace expensetracker1
         private void clickLogout_Click(object sender, EventArgs e)
         {
             this.Hide();
-            KryptonForm LoginForm = new KryptonForm();
-            LoginForm.ShowDialog();
-            this.Close();
+            LandForm landForm = new LandForm();
+            landForm.Show();
         }
 
         private void kryptonButton1_Click(object sender, EventArgs e)
@@ -83,7 +82,9 @@ namespace expensetracker1
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            
+            this.Hide();
+            DashboardForm dashboardForm = new DashboardForm(id);
+            dashboardForm.Show();
         }
     }
 }
