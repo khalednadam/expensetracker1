@@ -16,10 +16,12 @@ namespace expensetracker1
     {
         private MySqlConnection connection;
         private const string connectionString = "server=localhost;database=tracker;user=root;password=";
-        public DashboardForm(string name)
+        public int id;
+        public DashboardForm(int id)
         {
             InitializeComponent();
-            label1.Text = name;
+            this.id = id;
+            label1.Text = "";
         }
 
         private void kryptonButton1_Click(object sender, EventArgs e)
@@ -111,7 +113,7 @@ namespace expensetracker1
         private void btnAddincome_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Addincome addincome = new Addincome();
+            Addincome addincome = new Addincome(id);
             addincome.Show();
 
         }
@@ -157,7 +159,7 @@ namespace expensetracker1
         private void btnIncome_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Addincome addincome = new Addincome();
+            Addincome addincome = new Addincome(id);
             addincome.Show();
         }
     }

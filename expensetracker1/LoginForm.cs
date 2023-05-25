@@ -41,7 +41,7 @@ namespace expensetracker1
             string email = txtEmail.Text.ToString();
             string password = txtPassword.Text.ToString();
 
-            string sql = "SELECT name FROM users WHERE email = @email AND password = @password";
+            string sql = "SELECT id FROM users WHERE email = @email AND password = @password";
 
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
@@ -52,15 +52,15 @@ namespace expensetracker1
 
                     connection.Open();
 
-                    string username = Convert.ToString(command.ExecuteScalar());
-
-                    if (username != "")
+                    int id = Convert.ToInt32(command.ExecuteScalar());
+                     
+                    if (id != -1)
                     {
                         //MessageBox.Show("Login successful!");
                         // Perform actions after successful login
                         // TODO: Implement going to next step which is dahsboard
                         this.Hide();
-                        DashboardForm dashboardForm = new DashboardForm(username);
+                        DashboardForm dashboardForm = new DashboardForm(id);
                         dashboardForm.Show();
                     }
                     else
