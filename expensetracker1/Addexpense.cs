@@ -48,7 +48,7 @@ namespace expensetracker1
                 float amount = float.Parse(txtamount.Text.ToString(), CultureInfo.InvariantCulture.NumberFormat);
                 string description = txtDiscription.Text.ToString();
                 string date = dateexpense.Value.ToString();
-                string category = drpbtnCategory.Values.Text.ToString();
+                string category = drpbtnCategory.SelectedItem.ToString();
                 
                 int userid = id;
                 if (amount != 0)
@@ -64,9 +64,10 @@ namespace expensetracker1
                     txtamount.Text = "";
                     txtDiscription.Text = "";
                     drpbtnCategory.Text = "";
+                    drpbtnCategory.SelectedItem = "";
                     // TODO: Fix category dropdown
 
-                    
+
                 }
 
             }
