@@ -144,7 +144,7 @@ namespace expensetracker1
             // 
             // dateexpense
             // 
-            this.dateexpense.CustomFormat = "dd / mm / yyyy";
+            this.dateexpense.CustomFormat = "yyyy-mm-dd";
             this.dateexpense.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateexpense.Location = new System.Drawing.Point(412, 249);
             this.dateexpense.Margin = new System.Windows.Forms.Padding(2);

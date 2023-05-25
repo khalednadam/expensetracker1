@@ -63,7 +63,6 @@ namespace expensetracker1
         {
             connection = new MySqlConnection(connectionString);
             connection.Open();
-            MessageBox.Show("Connection is open.");
             if (connection.State == ConnectionState.Open)
             {
                 // Connection is open
@@ -81,13 +80,14 @@ namespace expensetracker1
             try
             {
                 float amount = float.Parse(txtamount.Text.ToString(), CultureInfo.InvariantCulture.NumberFormat);
+                Console.WriteLine((float)amount);
                 string description = txtDiscription.Text.ToString();
-                string date = dateAddincome.Value.ToString();
+                string date = dateAddincome.Value.ToString("yyyy-MM-dd");
                 int userid = id;
                 if(amount != 0)
                 {
                     string Query = "insert into income(amount, description, date, userId) " +
-                "values ( '" + amount + "','" + description + "', '" + date + "', '"+ id + "' )";
+                "values ( '" + (float) amount + "','" + description + "', '" + date + "', '"+ id + "' )";
                     MySqlConnection MyConn2 = new MySqlConnection(connectionString);
                     MySqlCommand MyCommand2 = new MySqlCommand(Query, MyConn2);
                     MySqlDataReader MyReader2;
@@ -145,6 +145,11 @@ namespace expensetracker1
             this.Hide();
             Logout logout = new Logout();
             logout.Show();
+        }
+
+        private void dateAddincome_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
