@@ -13,9 +13,11 @@ namespace expensetracker1
 {
     public partial class Totalspending : KryptonForm
     {
-        public Totalspending()
+        public int id;
+        public Totalspending(int id)
         {
             InitializeComponent();
+            this.id = id;
         }
 
         private void Totalspending_Load(object sender, EventArgs e)
@@ -36,21 +38,21 @@ namespace expensetracker1
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             this.Hide();
-            DashboardForm dashboardForm = new DashboardForm(1);
+            DashboardForm dashboardForm = new DashboardForm(id);
             dashboardForm.Show();
         }
 
         private void btnAddincome_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Addincome addincome = new Addincome(1);
+            Addincome addincome = new Addincome(id);
             addincome.Show();
         }
 
         private void btnAddexpence_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Addexpense addexpense = new Addexpense(1);
+            Addexpense addexpense = new Addexpense(id);
             addexpense.Show();
         }
 
@@ -62,7 +64,7 @@ namespace expensetracker1
         private void btnPrefrences_Click(object sender, EventArgs e)
         {
             this.Hide();
-            prefrencesForm prefrencesForm = new prefrencesForm();
+            prefrencesForm prefrencesForm = new prefrencesForm(id);
             prefrencesForm.Show();
         }
 
@@ -76,8 +78,15 @@ namespace expensetracker1
         private void btnLogout_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Logout logout = new Logout();
+            Logout logout = new Logout(id);
             logout.Show();
+        }
+
+        private void btnprevious_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Totalspendingmain totalspendingmain = new Totalspendingmain(id);
+            totalspendingmain.Show();
         }
     }
 }

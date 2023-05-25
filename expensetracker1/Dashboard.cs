@@ -47,7 +47,7 @@ namespace expensetracker1
         private void kryptonButton6_Click(object sender, EventArgs e)
         {
             this.Hide();
-            prefrencesForm preferences = new prefrencesForm();
+            prefrencesForm preferences = new prefrencesForm(id);
             preferences.Show();
 
 
@@ -121,7 +121,7 @@ namespace expensetracker1
         private void btnAddexpence_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Addexpense addexpense = new Addexpense(1);
+            Addexpense addexpense = new Addexpense(id);
             addexpense.Show();
 
         }
@@ -129,7 +129,7 @@ namespace expensetracker1
         private void btnTotalspending_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Totalspending totalspending = new Totalspending();
+            Totalspending totalspending = new Totalspending(id);
             totalspending.Show();
         }
 
@@ -143,14 +143,14 @@ namespace expensetracker1
         private void btnLogout_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Logout logout = new Logout();
+            Logout logout = new Logout(id);
             logout.Show();
         }
 
         private void btnExpence_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Addexpense addexpense = new Addexpense(1);
+            Addexpense addexpense = new Addexpense(id);
             addexpense.Show();
 
 

@@ -15,9 +15,11 @@ namespace expensetracker1
     public partial class prefrencesForm : KryptonForm
 
     {
-        public prefrencesForm()
+        public int id;
+        public prefrencesForm(int id)
         {
             InitializeComponent();
+            this.id = id;
         }
 
         private void prefrencs_Load(object sender, EventArgs e)
@@ -48,14 +50,14 @@ namespace expensetracker1
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             this.Hide();
-            DashboardForm dashboardForm = new DashboardForm(1);
+            DashboardForm dashboardForm = new DashboardForm(id);
             dashboardForm.Show();
         }
 
         private void btnAddincome_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Addincome addincome = new Addincome(1);
+            Addincome addincome = new Addincome(id);
             addincome.Show();
 
         }
@@ -63,14 +65,14 @@ namespace expensetracker1
         private void btnAddexpence_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Addexpense addexpense = new Addexpense(1);
+            Addexpense addexpense = new Addexpense(id);
             addexpense.Show();
         }
 
         private void btnTotalspendings_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Totalspending totalspending = new Totalspending();
+            Totalspending totalspending = new Totalspending(id);
             totalspending.Show();
         }
 
@@ -84,7 +86,7 @@ namespace expensetracker1
         private void btnLogout_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Logout logout = new Logout();
+            Logout logout = new Logout(id);
             logout.Show();
         }
     }
