@@ -110,6 +110,7 @@ namespace expensetracker1
             this.btnLogout.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Anek Bangla Medium", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.TabIndex = 10;
             this.btnLogout.Values.Text = "Log Out";
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnAboutus
             // 
@@ -122,6 +123,7 @@ namespace expensetracker1
             this.btnAboutus.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Anek Bangla Medium", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAboutus.TabIndex = 9;
             this.btnAboutus.Values.Text = "About Us";
+            this.btnAboutus.Click += new System.EventHandler(this.btnAboutus_Click);
             // 
             // btnPrefrences
             // 
@@ -134,6 +136,7 @@ namespace expensetracker1
             this.btnPrefrences.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Anek Bangla Medium", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrefrences.TabIndex = 8;
             this.btnPrefrences.Values.Text = "Prefrences";
+            this.btnPrefrences.Click += new System.EventHandler(this.btnPrefrences_Click);
             // 
             // btnTotalspendings
             // 
@@ -146,6 +149,7 @@ namespace expensetracker1
             this.btnTotalspendings.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Anek Bangla Medium", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTotalspendings.TabIndex = 7;
             this.btnTotalspendings.Values.Text = "Total spendings";
+            this.btnTotalspendings.Click += new System.EventHandler(this.btnTotalspendings_Click);
             // 
             // btnAddexpence
             // 
@@ -158,6 +162,7 @@ namespace expensetracker1
             this.btnAddexpence.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Anek Bangla Medium", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddexpence.TabIndex = 6;
             this.btnAddexpence.Values.Text = "Add Expence";
+            this.btnAddexpence.Click += new System.EventHandler(this.btnAddexpence_Click);
             // 
             // btnAddincome
             // 
@@ -170,6 +175,7 @@ namespace expensetracker1
             this.btnAddincome.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Anek Bangla Medium", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddincome.TabIndex = 5;
             this.btnAddincome.Values.Text = "Add Income";
+            this.btnAddincome.Click += new System.EventHandler(this.btnAddincome_Click);
             // 
             // btnDashboard
             // 
@@ -182,6 +188,7 @@ namespace expensetracker1
             this.btnDashboard.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Anek Bangla Medium", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.TabIndex = 0;
             this.btnDashboard.Values.Text = "Dashboard";
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // label3
             // 
@@ -218,7 +225,7 @@ namespace expensetracker1
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Anek Bangla", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(139)))), ((int)(((byte)(0)))));
-            this.label4.Location = new System.Drawing.Point(536, 43);
+            this.label4.Location = new System.Drawing.Point(608, 38);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(213, 47);
             this.label4.TabIndex = 36;
@@ -229,7 +236,7 @@ namespace expensetracker1
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Anek Bangla", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(739, 43);
+            this.label5.Location = new System.Drawing.Point(816, 38);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(160, 47);
             this.label5.TabIndex = 37;
