@@ -106,14 +106,14 @@ namespace expensetracker1
         private void btnAddexpence_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Addexpense addexpense = new Addexpense();
+            Addexpense addexpense = new Addexpense(id);
             addexpense.Show();
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             this.Hide();
-            DashboardForm dashboardForm = new DashboardForm(1);
+            DashboardForm dashboardForm = new DashboardForm(id);
             dashboardForm.Show();
         }
 
