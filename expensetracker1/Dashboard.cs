@@ -58,6 +58,8 @@ namespace expensetracker1
         {
             List<float> totalSpendings = new List<float>();
             List<string> categoriesOfSpendings = new List<string>();
+            float totalIncome = 0;
+            float totalSpending = 0;
             connection = new MySqlConnection(connectionString);
             connection.Open();
             if (connection.State == ConnectionState.Open)
@@ -70,16 +72,35 @@ namespace expensetracker1
                 // Connection is not open
                 Console.WriteLine("Connection is not open.");
             }
-            string sql = "SELECT amount, date, name, category FROM spending WHERE userId = @id order by date DESC";
+            string spendingSql = "SELECT amount, date, name, category FROM spending WHERE userId = @id order by date DESC";
+            string incomeSql = "SELECT amount, date, description FROM income WHERE userID = @id";
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
-                using (MySqlCommand command = new MySqlCommand(sql, connection))
+                using (MySqlCommand command = new MySqlCommand(incomeSql, connection))
+                {
+                    command.Parameters.AddWithValue("@id", id);
+                    connection.Open();
+
+                    MySqlDataReader incomeReader = command.ExecuteReader();
+                    
+                    while (incomeReader.Read())
+                    {
+                        float income = (float)incomeReader["amount"];
+                        Console.WriteLine((float)income);
+                        totalIncome += income;
+                    }
+                }
+            }
+            
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                using (MySqlCommand command = new MySqlCommand(spendingSql, connection))
                 {
                     command.Parameters.AddWithValue("@id", id);
                     connection.Open();
 
                     MySqlDataReader spendingReader = command.ExecuteReader();
-                    float totalSpending = 0;
+                   
                     while (spendingReader.Read())
                     {
                         float spending = (float)spendingReader["amount"];
@@ -89,9 +110,11 @@ namespace expensetracker1
                         categoriesOfSpendings.Add(category);
                         totalSpending += spending;
                     }
-                    lblSpendings.Text = totalSpending.ToString();
+                    float balance = totalIncome - totalSpending;
+                    lblSpendings.Text = balance.ToString();
                 }
             }
+            
             Console.WriteLine("---------");
             int handleSize;
             if(totalSpendings.Count < 5)

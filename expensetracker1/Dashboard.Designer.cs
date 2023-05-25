@@ -95,7 +95,7 @@ namespace expensetracker1
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-8, -12);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(223, 596);
             this.panel1.TabIndex = 5;
@@ -105,7 +105,7 @@ namespace expensetracker1
             // 
             this.btnLogout.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
             this.btnLogout.Location = new System.Drawing.Point(62, 398);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.btnLogout.Size = new System.Drawing.Size(232, 52);
@@ -117,7 +117,7 @@ namespace expensetracker1
             // 
             this.btnAboutus.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
             this.btnAboutus.Location = new System.Drawing.Point(62, 353);
-            this.btnAboutus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAboutus.Margin = new System.Windows.Forms.Padding(2);
             this.btnAboutus.Name = "btnAboutus";
             this.btnAboutus.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.btnAboutus.Size = new System.Drawing.Size(232, 52);
@@ -129,7 +129,7 @@ namespace expensetracker1
             // 
             this.btnPrefrences.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
             this.btnPrefrences.Location = new System.Drawing.Point(62, 306);
-            this.btnPrefrences.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPrefrences.Margin = new System.Windows.Forms.Padding(2);
             this.btnPrefrences.Name = "btnPrefrences";
             this.btnPrefrences.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.btnPrefrences.Size = new System.Drawing.Size(232, 52);
@@ -141,7 +141,7 @@ namespace expensetracker1
             // 
             this.btnTotalspending.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
             this.btnTotalspending.Location = new System.Drawing.Point(62, 261);
-            this.btnTotalspending.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTotalspending.Margin = new System.Windows.Forms.Padding(2);
             this.btnTotalspending.Name = "btnTotalspending";
             this.btnTotalspending.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.btnTotalspending.Size = new System.Drawing.Size(232, 52);
@@ -153,7 +153,7 @@ namespace expensetracker1
             // 
             this.btnAddexpence.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
             this.btnAddexpence.Location = new System.Drawing.Point(62, 216);
-            this.btnAddexpence.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddexpence.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddexpence.Name = "btnAddexpence";
             this.btnAddexpence.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.btnAddexpence.Size = new System.Drawing.Size(232, 52);
@@ -165,7 +165,7 @@ namespace expensetracker1
             // 
             this.btnAddincome.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
             this.btnAddincome.Location = new System.Drawing.Point(62, 168);
-            this.btnAddincome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddincome.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddincome.Name = "btnAddincome";
             this.btnAddincome.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.btnAddincome.Size = new System.Drawing.Size(232, 52);
@@ -177,7 +177,7 @@ namespace expensetracker1
             // 
             this.btnDashboard.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
             this.btnDashboard.Location = new System.Drawing.Point(62, 122);
-            this.btnDashboard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDashboard.Margin = new System.Windows.Forms.Padding(2);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.btnDashboard.Size = new System.Drawing.Size(232, 52);
@@ -187,11 +187,15 @@ namespace expensetracker1
             // 
             // kryptonPalette1
             // 
+            this.kryptonPalette1.BasePaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Blue;
             this.kryptonPalette1.ButtonSpecs.FormClose.Image = global::expensetracker1.Properties.Resources.close;
             this.kryptonPalette1.ButtonSpecs.FormClose.ImageStates.ImagePressed = global::expensetracker1.Properties.Resources.close;
             this.kryptonPalette1.ButtonSpecs.FormClose.ImageStates.ImageTracking = global::expensetracker1.Properties.Resources.close;
+            this.kryptonPalette1.ButtonSpecs.FormClose.Orientation = ComponentFactory.Krypton.Toolkit.PaletteButtonOrientation.Inherit;
+            this.kryptonPalette1.ButtonSpecs.FormClose.Style = ComponentFactory.Krypton.Toolkit.PaletteButtonStyle.Inherit;
             this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
             this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             // 
             // label2
             // 
@@ -213,9 +217,9 @@ namespace expensetracker1
             this.label4.Location = new System.Drawing.Point(229, 72);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(200, 24);
+            this.label4.Size = new System.Drawing.Size(78, 24);
             this.label4.TabIndex = 13;
-            this.label4.Text = "Spendings This Month";
+            this.label4.Text = "Balance";
             // 
             // lblSpendings
             // 
@@ -369,20 +373,24 @@ namespace expensetracker1
             // btnIncome
             // 
             this.btnIncome.Location = new System.Drawing.Point(537, 522);
-            this.btnIncome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnIncome.Margin = new System.Windows.Forms.Padding(2);
             this.btnIncome.Name = "btnIncome";
             this.btnIncome.Size = new System.Drawing.Size(154, 50);
             this.btnIncome.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
             this.btnIncome.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
+            this.btnIncome.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.btnIncome.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
             this.btnIncome.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
             this.btnIncome.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnIncome.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.btnIncome.StateCommon.Border.Rounding = 10;
             this.btnIncome.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnIncome.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
             this.btnIncome.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.btnIncome.StateCommon.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.btnIncome.StateCommon.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.btnIncome.TabIndex = 27;
             this.btnIncome.Values.Text = "Add Income";
             this.btnIncome.Click += new System.EventHandler(this.btnIncome_Click);
@@ -390,20 +398,24 @@ namespace expensetracker1
             // btnExpence
             // 
             this.btnExpence.Location = new System.Drawing.Point(357, 522);
-            this.btnExpence.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExpence.Margin = new System.Windows.Forms.Padding(2);
             this.btnExpence.Name = "btnExpence";
             this.btnExpence.Size = new System.Drawing.Size(156, 50);
             this.btnExpence.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
             this.btnExpence.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
+            this.btnExpence.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.btnExpence.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
             this.btnExpence.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
             this.btnExpence.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnExpence.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.btnExpence.StateCommon.Border.Rounding = 10;
             this.btnExpence.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnExpence.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
             this.btnExpence.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.btnExpence.StateCommon.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.btnExpence.StateCommon.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.btnExpence.TabIndex = 28;
             this.btnExpence.Values.Text = "Add Expence";
             this.btnExpence.Click += new System.EventHandler(this.btnExpence_Click);
@@ -432,7 +444,7 @@ namespace expensetracker1
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "DashboardForm";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
@@ -440,9 +452,11 @@ namespace expensetracker1
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
             this.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.StateCommon.Border.Rounding = 10;
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.btnDashboard_Load);
