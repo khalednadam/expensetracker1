@@ -49,7 +49,7 @@ namespace expensetracker1
         private void kryptonButton3_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Addexpense addexpense = new Addexpense();   
+            Addexpense addexpense = new Addexpense(1);   
             addexpense.Show();
         }
 

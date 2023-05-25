@@ -121,7 +121,7 @@ namespace expensetracker1
         private void btnAddexpence_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Addexpense addexpense = new Addexpense();
+            Addexpense addexpense = new Addexpense(1);
             addexpense.Show();
 
         }
@@ -150,7 +150,7 @@ namespace expensetracker1
         private void btnExpence_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Addexpense addexpense = new Addexpense();
+            Addexpense addexpense = new Addexpense(1);
             addexpense.Show();
 
 
