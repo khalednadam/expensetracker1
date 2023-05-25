@@ -51,7 +51,7 @@ namespace expensetracker1
                     command.Parameters.AddWithValue("@password", password);
 
                     connection.Open();
-
+                    
                     int id = Convert.ToInt32(command.ExecuteScalar());
                      
                     if (id != 0)
