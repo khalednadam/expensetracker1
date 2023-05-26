@@ -31,6 +31,20 @@
             this.components = new System.ComponentModel.Container();
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.iconButton7 = new FontAwesome.Sharp.IconButton();
+            this.kryptonButton8 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.iconButton6 = new FontAwesome.Sharp.IconButton();
+            this.kryptonButton7 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.iconButton5 = new FontAwesome.Sharp.IconButton();
+            this.kryptonButton6 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.iconButton4 = new FontAwesome.Sharp.IconButton();
+            this.kryptonButton4 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.kryptonButton3 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -38,20 +52,6 @@
             this.clickLogout = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btnCancel = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.label4 = new System.Windows.Forms.Label();
-            this.iconButton6 = new FontAwesome.Sharp.IconButton();
-            this.iconButton5 = new FontAwesome.Sharp.IconButton();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
-            this.iconButton7 = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.kryptonButton8 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kryptonButton7 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kryptonButton6 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kryptonButton4 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kryptonButton3 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -132,9 +132,212 @@
             this.panel1.Size = new System.Drawing.Size(297, 747);
             this.panel1.TabIndex = 7;
             // 
+            // iconButton7
+            // 
+            this.iconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(189)))), ((int)(((byte)(209)))));
+            this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.ArrowRightFromBracket;
+            this.iconButton7.IconColor = System.Drawing.Color.Black;
+            this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton7.Location = new System.Drawing.Point(24, 494);
+            this.iconButton7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconButton7.Name = "iconButton7";
+            this.iconButton7.Size = new System.Drawing.Size(53, 53);
+            this.iconButton7.TabIndex = 83;
+            this.iconButton7.UseVisualStyleBackColor = true;
+            // 
+            // kryptonButton8
+            // 
+            this.kryptonButton8.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
+            this.kryptonButton8.Location = new System.Drawing.Point(104, 483);
+            this.kryptonButton8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kryptonButton8.Name = "kryptonButton8";
+            this.kryptonButton8.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.kryptonButton8.Size = new System.Drawing.Size(309, 64);
+            this.kryptonButton8.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Anek Bangla SemiBold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton8.StateCommon.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonButton8.StateCommon.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
+            this.kryptonButton8.TabIndex = 11;
+            this.kryptonButton8.Values.Text = "Logout";
+            this.kryptonButton8.Click += new System.EventHandler(this.kryptonButton8_Click);
+            // 
+            // iconButton6
+            // 
+            this.iconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(189)))), ((int)(((byte)(209)))));
+            this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.Users;
+            this.iconButton6.IconColor = System.Drawing.Color.Black;
+            this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton6.Location = new System.Drawing.Point(23, 432);
+            this.iconButton6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconButton6.Name = "iconButton6";
+            this.iconButton6.Size = new System.Drawing.Size(53, 53);
+            this.iconButton6.TabIndex = 82;
+            this.iconButton6.UseVisualStyleBackColor = true;
+            // 
+            // kryptonButton7
+            // 
+            this.kryptonButton7.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
+            this.kryptonButton7.Location = new System.Drawing.Point(104, 431);
+            this.kryptonButton7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kryptonButton7.Name = "kryptonButton7";
+            this.kryptonButton7.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.kryptonButton7.Size = new System.Drawing.Size(309, 64);
+            this.kryptonButton7.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Anek Bangla SemiBold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton7.StateCommon.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonButton7.StateCommon.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
+            this.kryptonButton7.TabIndex = 10;
+            this.kryptonButton7.Values.Text = "About Us";
+            this.kryptonButton7.Click += new System.EventHandler(this.kryptonButton7_Click);
+            // 
+            // iconButton5
+            // 
+            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(189)))), ((int)(((byte)(209)))));
+            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.Gear;
+            this.iconButton5.IconColor = System.Drawing.Color.Black;
+            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton5.Location = new System.Drawing.Point(24, 378);
+            this.iconButton5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconButton5.Name = "iconButton5";
+            this.iconButton5.Size = new System.Drawing.Size(53, 53);
+            this.iconButton5.TabIndex = 81;
+            this.iconButton5.UseVisualStyleBackColor = true;
+            // 
+            // kryptonButton6
+            // 
+            this.kryptonButton6.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
+            this.kryptonButton6.Location = new System.Drawing.Point(94, 377);
+            this.kryptonButton6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kryptonButton6.Name = "kryptonButton6";
+            this.kryptonButton6.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.kryptonButton6.Size = new System.Drawing.Size(309, 64);
+            this.kryptonButton6.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Anek Bangla SemiBold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton6.StateCommon.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonButton6.StateCommon.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
+            this.kryptonButton6.TabIndex = 9;
+            this.kryptonButton6.Values.Text = "Preferences";
+            this.kryptonButton6.Click += new System.EventHandler(this.kryptonButton6_Click);
+            // 
+            // iconButton4
+            // 
+            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(189)))), ((int)(((byte)(209)))));
+            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Coins;
+            this.iconButton4.IconColor = System.Drawing.Color.Black;
+            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton4.Location = new System.Drawing.Point(22, 320);
+            this.iconButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconButton4.Name = "iconButton4";
+            this.iconButton4.Size = new System.Drawing.Size(53, 53);
+            this.iconButton4.TabIndex = 80;
+            this.iconButton4.UseVisualStyleBackColor = true;
+            // 
+            // kryptonButton4
+            // 
+            this.kryptonButton4.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
+            this.kryptonButton4.Location = new System.Drawing.Point(83, 320);
+            this.kryptonButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kryptonButton4.Name = "kryptonButton4";
+            this.kryptonButton4.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.kryptonButton4.Size = new System.Drawing.Size(309, 64);
+            this.kryptonButton4.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Anek Bangla SemiBold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton4.StateCommon.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonButton4.StateCommon.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
+            this.kryptonButton4.TabIndex = 7;
+            this.kryptonButton4.Values.Text = "Total Spending";
+            this.kryptonButton4.Click += new System.EventHandler(this.kryptonButton4_Click);
+            // 
+            // iconButton3
+            // 
+            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(189)))), ((int)(((byte)(209)))));
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.UserMinus;
+            this.iconButton3.IconColor = System.Drawing.Color.Black;
+            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton3.Location = new System.Drawing.Point(26, 256);
+            this.iconButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconButton3.Name = "iconButton3";
+            this.iconButton3.Size = new System.Drawing.Size(53, 53);
+            this.iconButton3.TabIndex = 79;
+            this.iconButton3.UseVisualStyleBackColor = true;
+            // 
+            // kryptonButton3
+            // 
+            this.kryptonButton3.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
+            this.kryptonButton3.Location = new System.Drawing.Point(85, 262);
+            this.kryptonButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kryptonButton3.Name = "kryptonButton3";
+            this.kryptonButton3.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.kryptonButton3.Size = new System.Drawing.Size(309, 64);
+            this.kryptonButton3.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Anek Bangla SemiBold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton3.StateCommon.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonButton3.StateCommon.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
+            this.kryptonButton3.TabIndex = 6;
+            this.kryptonButton3.Values.Text = "Add Expense";
+            this.kryptonButton3.Click += new System.EventHandler(this.kryptonButton3_Click);
+            // 
+            // iconButton2
+            // 
+            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(189)))), ((int)(((byte)(209)))));
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
+            this.iconButton2.IconColor = System.Drawing.Color.Black;
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton2.Location = new System.Drawing.Point(22, 206);
+            this.iconButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Size = new System.Drawing.Size(53, 53);
+            this.iconButton2.TabIndex = 78;
+            this.iconButton2.UseVisualStyleBackColor = true;
+            // 
+            // kryptonButton2
+            // 
+            this.kryptonButton2.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
+            this.kryptonButton2.Location = new System.Drawing.Point(85, 206);
+            this.kryptonButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kryptonButton2.Name = "kryptonButton2";
+            this.kryptonButton2.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.kryptonButton2.Size = new System.Drawing.Size(309, 64);
+            this.kryptonButton2.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Anek Bangla SemiBold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton2.StateCommon.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonButton2.StateCommon.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
+            this.kryptonButton2.TabIndex = 5;
+            this.kryptonButton2.Values.Text = "Add Income";
+            this.kryptonButton2.Click += new System.EventHandler(this.kryptonButton2_Click);
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(189)))), ((int)(((byte)(209)))));
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.House;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.Location = new System.Drawing.Point(22, 150);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(53, 53);
+            this.iconButton1.TabIndex = 77;
+            this.iconButton1.UseVisualStyleBackColor = true;
+            // 
+            // kryptonButton1
+            // 
+            this.kryptonButton1.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
+            this.kryptonButton1.Location = new System.Drawing.Point(92, 146);
+            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kryptonButton1.Name = "kryptonButton1";
+            this.kryptonButton1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.kryptonButton1.Size = new System.Drawing.Size(309, 64);
+            this.kryptonButton1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Anek Bangla SemiBold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton1.StateCommon.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonButton1.StateCommon.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
+            this.kryptonButton1.TabIndex = 0;
+            this.kryptonButton1.Values.Text = "Dashboard";
+            this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
+            // 
             // label3
             // 
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Anek Bangla", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(17, 25);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(193, 39);
@@ -144,10 +347,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Anek Bangla Medium", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Anek Bangla", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(17, 63);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(177, 47);
+            this.label1.Size = new System.Drawing.Size(174, 47);
             this.label1.TabIndex = 4;
             this.label1.Text = "Khaled Nadam";
             // 
@@ -169,7 +372,7 @@
             this.kryptonTextBox1.Location = new System.Drawing.Point(7, 58);
             this.kryptonTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonTextBox1.Name = "kryptonTextBox1";
-            this.kryptonTextBox1.Size = new System.Drawing.Size(457, 43);
+            this.kryptonTextBox1.Size = new System.Drawing.Size(457, 61);
             this.kryptonTextBox1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.kryptonTextBox1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.kryptonTextBox1.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
@@ -180,7 +383,7 @@
             this.kryptonTextBox1.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonTextBox1.StateCommon.Border.Rounding = 20;
             this.kryptonTextBox1.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(139)))), ((int)(((byte)(0)))));
-            this.kryptonTextBox1.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox1.StateCommon.Content.Font = new System.Drawing.Font("Anek Bangla Medium", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox1.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.kryptonTextBox1.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -197,7 +400,7 @@
             this.clickLogout.Location = new System.Drawing.Point(257, 135);
             this.clickLogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.clickLogout.Name = "clickLogout";
-            this.clickLogout.Size = new System.Drawing.Size(123, 43);
+            this.clickLogout.Size = new System.Drawing.Size(132, 53);
             this.clickLogout.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
             this.clickLogout.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
             this.clickLogout.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
@@ -211,7 +414,7 @@
             this.clickLogout.StateCommon.Border.Width = 1;
             this.clickLogout.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.clickLogout.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.clickLogout.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clickLogout.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Anek Bangla SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clickLogout.StateCommon.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.clickLogout.StateCommon.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.clickLogout.TabIndex = 15;
@@ -223,7 +426,7 @@
             this.btnCancel.Location = new System.Drawing.Point(85, 135);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(123, 43);
+            this.btnCancel.Size = new System.Drawing.Size(132, 53);
             this.btnCancel.StateCommon.Back.Color1 = System.Drawing.Color.LightGray;
             this.btnCancel.StateCommon.Back.Color2 = System.Drawing.Color.LightGray;
             this.btnCancel.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
@@ -237,7 +440,7 @@
             this.btnCancel.StateCommon.Border.Width = 1;
             this.btnCancel.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(139)))), ((int)(((byte)(0)))));
             this.btnCancel.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(139)))), ((int)(((byte)(0)))));
-            this.btnCancel.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Anek Bangla SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.StateCommon.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.btnCancel.StateCommon.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.btnCancel.TabIndex = 14;
@@ -247,7 +450,7 @@
             // label4
             // 
             this.label4.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Anek Bangla Medium", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(139)))), ((int)(((byte)(0)))));
             this.label4.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.label4.Location = new System.Drawing.Point(312, -4);
@@ -256,188 +459,6 @@
             this.label4.TabIndex = 19;
             this.label4.Text = "Logout ";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // iconButton6
-            // 
-            this.iconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(189)))), ((int)(((byte)(209)))));
-            this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.Users;
-            this.iconButton6.IconColor = System.Drawing.Color.Black;
-            this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton6.Location = new System.Drawing.Point(23, 432);
-            this.iconButton6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.iconButton6.Name = "iconButton6";
-            this.iconButton6.Size = new System.Drawing.Size(53, 53);
-            this.iconButton6.TabIndex = 82;
-            this.iconButton6.UseVisualStyleBackColor = true;
-            // 
-            // iconButton5
-            // 
-            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(189)))), ((int)(((byte)(209)))));
-            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.Gear;
-            this.iconButton5.IconColor = System.Drawing.Color.Black;
-            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton5.Location = new System.Drawing.Point(24, 378);
-            this.iconButton5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Size = new System.Drawing.Size(53, 53);
-            this.iconButton5.TabIndex = 81;
-            this.iconButton5.UseVisualStyleBackColor = true;
-            // 
-            // iconButton4
-            // 
-            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(189)))), ((int)(((byte)(209)))));
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Coins;
-            this.iconButton4.IconColor = System.Drawing.Color.Black;
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.Location = new System.Drawing.Point(22, 320);
-            this.iconButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Size = new System.Drawing.Size(53, 53);
-            this.iconButton4.TabIndex = 80;
-            this.iconButton4.UseVisualStyleBackColor = true;
-            // 
-            // iconButton7
-            // 
-            this.iconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(189)))), ((int)(((byte)(209)))));
-            this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.ArrowRightFromBracket;
-            this.iconButton7.IconColor = System.Drawing.Color.Black;
-            this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton7.Location = new System.Drawing.Point(24, 494);
-            this.iconButton7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.iconButton7.Name = "iconButton7";
-            this.iconButton7.Size = new System.Drawing.Size(53, 53);
-            this.iconButton7.TabIndex = 83;
-            this.iconButton7.UseVisualStyleBackColor = true;
-            // 
-            // iconButton2
-            // 
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(189)))), ((int)(((byte)(209)))));
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
-            this.iconButton2.IconColor = System.Drawing.Color.Black;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.Location = new System.Drawing.Point(22, 206);
-            this.iconButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(53, 53);
-            this.iconButton2.TabIndex = 78;
-            this.iconButton2.UseVisualStyleBackColor = true;
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(189)))), ((int)(((byte)(209)))));
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.House;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(22, 150);
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(53, 53);
-            this.iconButton1.TabIndex = 77;
-            this.iconButton1.UseVisualStyleBackColor = true;
-            // 
-            // iconButton3
-            // 
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(189)))), ((int)(((byte)(209)))));
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.UserMinus;
-            this.iconButton3.IconColor = System.Drawing.Color.Black;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.Location = new System.Drawing.Point(26, 256);
-            this.iconButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(53, 53);
-            this.iconButton3.TabIndex = 79;
-            this.iconButton3.UseVisualStyleBackColor = true;
-            // 
-            // kryptonButton8
-            // 
-            this.kryptonButton8.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
-            this.kryptonButton8.Location = new System.Drawing.Point(104, 483);
-            this.kryptonButton8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonButton8.Name = "kryptonButton8";
-            this.kryptonButton8.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton8.Size = new System.Drawing.Size(309, 64);
-            this.kryptonButton8.TabIndex = 11;
-            this.kryptonButton8.Values.Text = "Logout";
-            this.kryptonButton8.Click += new System.EventHandler(this.kryptonButton8_Click);
-            // 
-            // kryptonButton7
-            // 
-            this.kryptonButton7.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
-            this.kryptonButton7.Location = new System.Drawing.Point(104, 431);
-            this.kryptonButton7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonButton7.Name = "kryptonButton7";
-            this.kryptonButton7.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton7.Size = new System.Drawing.Size(309, 64);
-            this.kryptonButton7.TabIndex = 10;
-            this.kryptonButton7.Values.Text = "About Us";
-            this.kryptonButton7.Click += new System.EventHandler(this.kryptonButton7_Click);
-            // 
-            // kryptonButton6
-            // 
-            this.kryptonButton6.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
-            this.kryptonButton6.Location = new System.Drawing.Point(94, 377);
-            this.kryptonButton6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonButton6.Name = "kryptonButton6";
-            this.kryptonButton6.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton6.Size = new System.Drawing.Size(309, 64);
-            this.kryptonButton6.TabIndex = 9;
-            this.kryptonButton6.Values.Text = "Preferences";
-            this.kryptonButton6.Click += new System.EventHandler(this.kryptonButton6_Click);
-            // 
-            // kryptonButton4
-            // 
-            this.kryptonButton4.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
-            this.kryptonButton4.Location = new System.Drawing.Point(83, 320);
-            this.kryptonButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonButton4.Name = "kryptonButton4";
-            this.kryptonButton4.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton4.Size = new System.Drawing.Size(309, 64);
-            this.kryptonButton4.TabIndex = 7;
-            this.kryptonButton4.Values.Text = "Total Spending";
-            this.kryptonButton4.Click += new System.EventHandler(this.kryptonButton4_Click);
-            // 
-            // kryptonButton3
-            // 
-            this.kryptonButton3.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
-            this.kryptonButton3.Location = new System.Drawing.Point(85, 262);
-            this.kryptonButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonButton3.Name = "kryptonButton3";
-            this.kryptonButton3.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton3.Size = new System.Drawing.Size(309, 64);
-            this.kryptonButton3.TabIndex = 6;
-            this.kryptonButton3.Values.Text = "Add Expense";
-            this.kryptonButton3.Click += new System.EventHandler(this.kryptonButton3_Click);
-            // 
-            // kryptonButton2
-            // 
-            this.kryptonButton2.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
-            this.kryptonButton2.Location = new System.Drawing.Point(85, 206);
-            this.kryptonButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonButton2.Name = "kryptonButton2";
-            this.kryptonButton2.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton2.Size = new System.Drawing.Size(309, 64);
-            this.kryptonButton2.TabIndex = 5;
-            this.kryptonButton2.Values.Text = "Add Income";
-            this.kryptonButton2.Click += new System.EventHandler(this.kryptonButton2_Click);
-            // 
-            // kryptonButton1
-            // 
-            this.kryptonButton1.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
-            this.kryptonButton1.Location = new System.Drawing.Point(92, 146);
-            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton1.Size = new System.Drawing.Size(309, 64);
-            this.kryptonButton1.TabIndex = 0;
-            this.kryptonButton1.Values.Text = "Dashboard";
-            this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
             // 
             // Logout
             // 
