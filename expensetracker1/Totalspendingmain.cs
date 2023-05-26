@@ -8,11 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComponentFactory.Krypton.Toolkit;
-
+using MySql.Data.MySqlClient;
 namespace expensetracker1
 {
     public partial class Totalspendingmain : KryptonForm
     {
+        private MySqlConnection connection;
+        private const string connectionString = "server=localhost;database=tracker;user=root;password=";
         public int id;
         public Totalspendingmain(int id)
         {
@@ -22,7 +24,41 @@ namespace expensetracker1
 
         private void Totalspendingmain_Load(object sender, EventArgs e)
         {
+            List<float> totalSpendings = new List<float>();
+            float totalSpending = 0;
+            connection = new MySqlConnection(connectionString);
+            connection.Open();
+            if (connection.State == ConnectionState.Open)
+            {
+                // Connection is open
+                Console.WriteLine("Connection is open.");
+            }
+            else
+            {
+                // Connection is not open
+                Console.WriteLine("Connection is not open.");
+            }
+            string spendingSql = "SELECT amount, date, name, category FROM spending WHERE userId = @id";
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                using (MySqlCommand command = new MySqlCommand(spendingSql, connection))
+                {
+                    command.Parameters.AddWithValue("@id", id);
+                    connection.Open();
 
+                    MySqlDataReader spendingReader = command.ExecuteReader();
+
+                    while (spendingReader.Read())
+                    {
+                        float spending = (float)spendingReader["amount"];
+                        Console.WriteLine((float)spending);
+                        totalSpendings.Add(spending);
+                        totalSpending += spending;
+                    }
+                    
+                    label5.Text = totalSpending.ToString() + " $";
+                }
+            }
         }
 
         private void label2_Click(object sender, EventArgs e)
