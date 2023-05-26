@@ -65,10 +65,9 @@ namespace expensetracker1
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(14, 38);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(21, 58);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(145, 32);
+            this.label3.Size = new System.Drawing.Size(218, 49);
             this.label3.TabIndex = 3;
             this.label3.Text = "Welcome,";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -77,10 +76,9 @@ namespace expensetracker1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Anek Bangla Medium", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(14, 67);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(21, 103);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 37);
+            this.label1.Size = new System.Drawing.Size(202, 54);
             this.label1.TabIndex = 4;
             this.label1.Text = "Khaled Nadam";
             // 
@@ -103,10 +101,9 @@ namespace expensetracker1
             this.panel1.Controls.Add(this.btnDashboard);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(-6, -10);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Location = new System.Drawing.Point(-9, -15);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(223, 596);
+            this.panel1.Size = new System.Drawing.Size(334, 917);
             this.panel1.TabIndex = 5;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -117,10 +114,9 @@ namespace expensetracker1
             this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.ArrowRightFromBracket;
             this.iconButton7.IconColor = System.Drawing.Color.Black;
             this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton7.Location = new System.Drawing.Point(23, 403);
-            this.iconButton7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconButton7.Location = new System.Drawing.Point(34, 620);
             this.iconButton7.Name = "iconButton7";
-            this.iconButton7.Size = new System.Drawing.Size(40, 43);
+            this.iconButton7.Size = new System.Drawing.Size(60, 66);
             this.iconButton7.TabIndex = 83;
             this.iconButton7.UseVisualStyleBackColor = true;
             // 
@@ -131,10 +127,9 @@ namespace expensetracker1
             this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.Users;
             this.iconButton6.IconColor = System.Drawing.Color.Black;
             this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton6.Location = new System.Drawing.Point(22, 353);
-            this.iconButton6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconButton6.Location = new System.Drawing.Point(33, 543);
             this.iconButton6.Name = "iconButton6";
-            this.iconButton6.Size = new System.Drawing.Size(40, 43);
+            this.iconButton6.Size = new System.Drawing.Size(60, 66);
             this.iconButton6.TabIndex = 82;
             this.iconButton6.UseVisualStyleBackColor = true;
             // 
@@ -145,10 +140,9 @@ namespace expensetracker1
             this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.Gear;
             this.iconButton5.IconColor = System.Drawing.Color.Black;
             this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton5.Location = new System.Drawing.Point(23, 309);
-            this.iconButton5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconButton5.Location = new System.Drawing.Point(34, 475);
             this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Size = new System.Drawing.Size(40, 43);
+            this.iconButton5.Size = new System.Drawing.Size(60, 66);
             this.iconButton5.TabIndex = 81;
             this.iconButton5.UseVisualStyleBackColor = true;
             // 
@@ -159,10 +153,9 @@ namespace expensetracker1
             this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Coins;
             this.iconButton4.IconColor = System.Drawing.Color.Black;
             this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.Location = new System.Drawing.Point(22, 262);
-            this.iconButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconButton4.Location = new System.Drawing.Point(33, 403);
             this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Size = new System.Drawing.Size(40, 43);
+            this.iconButton4.Size = new System.Drawing.Size(60, 66);
             this.iconButton4.TabIndex = 80;
             this.iconButton4.UseVisualStyleBackColor = true;
             // 
@@ -173,10 +166,9 @@ namespace expensetracker1
             this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.UserMinus;
             this.iconButton3.IconColor = System.Drawing.Color.Black;
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.Location = new System.Drawing.Point(25, 210);
-            this.iconButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconButton3.Location = new System.Drawing.Point(38, 323);
             this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(40, 43);
+            this.iconButton3.Size = new System.Drawing.Size(60, 66);
             this.iconButton3.TabIndex = 79;
             this.iconButton3.UseVisualStyleBackColor = true;
             // 
@@ -187,10 +179,9 @@ namespace expensetracker1
             this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
             this.iconButton2.IconColor = System.Drawing.Color.Black;
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.Location = new System.Drawing.Point(22, 169);
-            this.iconButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconButton2.Location = new System.Drawing.Point(33, 260);
             this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(40, 43);
+            this.iconButton2.Size = new System.Drawing.Size(60, 66);
             this.iconButton2.TabIndex = 78;
             this.iconButton2.UseVisualStyleBackColor = true;
             // 
@@ -201,21 +192,19 @@ namespace expensetracker1
             this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.House;
             this.iconButton1.IconColor = System.Drawing.Color.Black;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(22, 124);
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconButton1.Location = new System.Drawing.Point(33, 191);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(40, 43);
+            this.iconButton1.Size = new System.Drawing.Size(60, 66);
             this.iconButton1.TabIndex = 77;
             this.iconButton1.UseVisualStyleBackColor = true;
             // 
             // btnLogout
             // 
             this.btnLogout.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
-            this.btnLogout.Location = new System.Drawing.Point(66, 398);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogout.Location = new System.Drawing.Point(99, 612);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnLogout.Size = new System.Drawing.Size(232, 52);
+            this.btnLogout.Size = new System.Drawing.Size(348, 80);
             this.btnLogout.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.TabIndex = 11;
             this.btnLogout.Values.Text = "Logout";
@@ -224,11 +213,10 @@ namespace expensetracker1
             // btnAboutus
             // 
             this.btnAboutus.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
-            this.btnAboutus.Location = new System.Drawing.Point(64, 348);
-            this.btnAboutus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAboutus.Location = new System.Drawing.Point(96, 535);
             this.btnAboutus.Name = "btnAboutus";
             this.btnAboutus.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnAboutus.Size = new System.Drawing.Size(232, 52);
+            this.btnAboutus.Size = new System.Drawing.Size(348, 80);
             this.btnAboutus.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAboutus.TabIndex = 10;
             this.btnAboutus.Values.Text = "About Us";
@@ -237,11 +225,10 @@ namespace expensetracker1
             // btnPrefrences
             // 
             this.btnPrefrences.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
-            this.btnPrefrences.Location = new System.Drawing.Point(66, 304);
-            this.btnPrefrences.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPrefrences.Location = new System.Drawing.Point(99, 468);
             this.btnPrefrences.Name = "btnPrefrences";
             this.btnPrefrences.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnPrefrences.Size = new System.Drawing.Size(232, 52);
+            this.btnPrefrences.Size = new System.Drawing.Size(348, 80);
             this.btnPrefrences.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrefrences.TabIndex = 9;
             this.btnPrefrences.Values.Text = "Preferences";
@@ -250,11 +237,10 @@ namespace expensetracker1
             // btnTotalspending
             // 
             this.btnTotalspending.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
-            this.btnTotalspending.Location = new System.Drawing.Point(66, 257);
-            this.btnTotalspending.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTotalspending.Location = new System.Drawing.Point(99, 395);
             this.btnTotalspending.Name = "btnTotalspending";
             this.btnTotalspending.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnTotalspending.Size = new System.Drawing.Size(232, 52);
+            this.btnTotalspending.Size = new System.Drawing.Size(348, 80);
             this.btnTotalspending.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTotalspending.TabIndex = 7;
             this.btnTotalspending.Values.Text = "Total Spending";
@@ -263,11 +249,10 @@ namespace expensetracker1
             // btnAddexpence
             // 
             this.btnAddexpence.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
-            this.btnAddexpence.Location = new System.Drawing.Point(66, 212);
-            this.btnAddexpence.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddexpence.Location = new System.Drawing.Point(99, 326);
             this.btnAddexpence.Name = "btnAddexpence";
             this.btnAddexpence.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnAddexpence.Size = new System.Drawing.Size(232, 52);
+            this.btnAddexpence.Size = new System.Drawing.Size(348, 80);
             this.btnAddexpence.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddexpence.TabIndex = 6;
             this.btnAddexpence.Values.Text = "Add Expense";
@@ -276,11 +261,10 @@ namespace expensetracker1
             // btnAddincome
             // 
             this.btnAddincome.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
-            this.btnAddincome.Location = new System.Drawing.Point(66, 168);
-            this.btnAddincome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddincome.Location = new System.Drawing.Point(99, 258);
             this.btnAddincome.Name = "btnAddincome";
             this.btnAddincome.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnAddincome.Size = new System.Drawing.Size(232, 52);
+            this.btnAddincome.Size = new System.Drawing.Size(348, 80);
             this.btnAddincome.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddincome.TabIndex = 5;
             this.btnAddincome.Values.Text = "Add Income";
@@ -289,11 +273,10 @@ namespace expensetracker1
             // btnDashboard
             // 
             this.btnDashboard.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Command;
-            this.btnDashboard.Location = new System.Drawing.Point(66, 121);
-            this.btnDashboard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDashboard.Location = new System.Drawing.Point(99, 186);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnDashboard.Size = new System.Drawing.Size(232, 52);
+            this.btnDashboard.Size = new System.Drawing.Size(348, 80);
             this.btnDashboard.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.TabIndex = 0;
             this.btnDashboard.Values.Text = "Dashboard";
@@ -312,21 +295,20 @@ namespace expensetracker1
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Anek Bangla Medium", 34.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(139)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(221, -11);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(332, -17);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(266, 91);
+            this.label2.Size = new System.Drawing.Size(393, 136);
             this.label2.TabIndex = 12;
             this.label2.Text = "Dashboard";
             // 
             // lblSpendings
             // 
+            this.lblSpendings.AutoSize = true;
             this.lblSpendings.Font = new System.Drawing.Font("Anek Bangla Medium", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSpendings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(210)))), ((int)(((byte)(0)))));
-            this.lblSpendings.Location = new System.Drawing.Point(237, 143);
-            this.lblSpendings.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSpendings.Location = new System.Drawing.Point(356, 220);
             this.lblSpendings.Name = "lblSpendings";
-            this.lblSpendings.Size = new System.Drawing.Size(314, 142);
+            this.lblSpendings.Size = new System.Drawing.Size(512, 234);
             this.lblSpendings.TabIndex = 14;
             this.lblSpendings.Text = "703.34$";
             // 
@@ -335,10 +317,9 @@ namespace expensetracker1
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(139)))), ((int)(((byte)(0)))));
-            this.label6.Location = new System.Drawing.Point(609, 66);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(914, 102);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(273, 39);
+            this.label6.Size = new System.Drawing.Size(409, 59);
             this.label6.TabIndex = 15;
             this.label6.Text = "Last 5 expenses ";
             // 
@@ -347,10 +328,9 @@ namespace expensetracker1
             this.lblSpended1.AutoSize = true;
             this.lblSpended1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSpended1.ForeColor = System.Drawing.Color.Black;
-            this.lblSpended1.Location = new System.Drawing.Point(616, 125);
-            this.lblSpended1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSpended1.Location = new System.Drawing.Point(924, 192);
             this.lblSpended1.Name = "lblSpended1";
-            this.lblSpended1.Size = new System.Drawing.Size(172, 26);
+            this.lblSpended1.Size = new System.Drawing.Size(257, 38);
             this.lblSpended1.TabIndex = 16;
             this.lblSpended1.Text = "$10.00 - clothing";
             // 
@@ -359,10 +339,9 @@ namespace expensetracker1
             this.lblSpended5.AutoSize = true;
             this.lblSpended5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSpended5.ForeColor = System.Drawing.Color.Black;
-            this.lblSpended5.Location = new System.Drawing.Point(616, 273);
-            this.lblSpended5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSpended5.Location = new System.Drawing.Point(924, 420);
             this.lblSpended5.Name = "lblSpended5";
-            this.lblSpended5.Size = new System.Drawing.Size(191, 26);
+            this.lblSpended5.Size = new System.Drawing.Size(288, 38);
             this.lblSpended5.TabIndex = 17;
             this.lblSpended5.Text = "$34.47 - Groceries";
             // 
@@ -371,10 +350,9 @@ namespace expensetracker1
             this.lblSpended4.AutoSize = true;
             this.lblSpended4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSpended4.ForeColor = System.Drawing.Color.Black;
-            this.lblSpended4.Location = new System.Drawing.Point(616, 235);
-            this.lblSpended4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSpended4.Location = new System.Drawing.Point(924, 362);
             this.lblSpended4.Name = "lblSpended4";
-            this.lblSpended4.Size = new System.Drawing.Size(189, 26);
+            this.lblSpended4.Size = new System.Drawing.Size(283, 38);
             this.lblSpended4.TabIndex = 18;
             this.lblSpended4.Text = "$400.00 - Housing";
             // 
@@ -383,10 +361,9 @@ namespace expensetracker1
             this.lblSpended3.AutoSize = true;
             this.lblSpended3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSpended3.ForeColor = System.Drawing.Color.Black;
-            this.lblSpended3.Location = new System.Drawing.Point(616, 199);
-            this.lblSpended3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSpended3.Location = new System.Drawing.Point(924, 306);
             this.lblSpended3.Name = "lblSpended3";
-            this.lblSpended3.Size = new System.Drawing.Size(223, 26);
+            this.lblSpended3.Size = new System.Drawing.Size(337, 38);
             this.lblSpended3.TabIndex = 19;
             this.lblSpended3.Text = "$3.70 - Transportation";
             // 
@@ -395,19 +372,17 @@ namespace expensetracker1
             this.lblSpended2.AutoSize = true;
             this.lblSpended2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSpended2.ForeColor = System.Drawing.Color.Black;
-            this.lblSpended2.Location = new System.Drawing.Point(616, 163);
-            this.lblSpended2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSpended2.Location = new System.Drawing.Point(924, 251);
             this.lblSpended2.Name = "lblSpended2";
-            this.lblSpended2.Size = new System.Drawing.Size(146, 26);
+            this.lblSpended2.Size = new System.Drawing.Size(219, 38);
             this.lblSpended2.TabIndex = 20;
             this.lblSpended2.Text = "$30.40 - Food";
             // 
             // btnIncome
             // 
-            this.btnIncome.Location = new System.Drawing.Point(569, 370);
-            this.btnIncome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnIncome.Location = new System.Drawing.Point(854, 569);
             this.btnIncome.Name = "btnIncome";
-            this.btnIncome.Size = new System.Drawing.Size(154, 50);
+            this.btnIncome.Size = new System.Drawing.Size(231, 77);
             this.btnIncome.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
             this.btnIncome.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
             this.btnIncome.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
@@ -425,10 +400,9 @@ namespace expensetracker1
             // 
             // btnExpence
             // 
-            this.btnExpence.Location = new System.Drawing.Point(378, 370);
-            this.btnExpence.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExpence.Location = new System.Drawing.Point(567, 569);
             this.btnExpence.Name = "btnExpence";
-            this.btnExpence.Size = new System.Drawing.Size(156, 50);
+            this.btnExpence.Size = new System.Drawing.Size(234, 77);
             this.btnExpence.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
             this.btnExpence.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
             this.btnExpence.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
@@ -449,19 +423,18 @@ namespace expensetracker1
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(139)))), ((int)(((byte)(0)))));
-            this.label4.Location = new System.Drawing.Point(241, 127);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(362, 195);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(141, 39);
+            this.label4.Size = new System.Drawing.Size(208, 59);
             this.label4.TabIndex = 29;
             this.label4.Text = "Balance";
             // 
             // DashboardForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.ClientSize = new System.Drawing.Size(927, 591);
+            this.ClientSize = new System.Drawing.Size(1390, 909);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnExpence);
             this.Controls.Add(this.btnIncome);
@@ -475,7 +448,6 @@ namespace expensetracker1
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "DashboardForm";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
