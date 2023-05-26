@@ -136,5 +136,15 @@ namespace expensetracker1
             Logout logout = new Logout(id);
             logout.Show();
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
