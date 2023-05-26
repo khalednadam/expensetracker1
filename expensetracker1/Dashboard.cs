@@ -72,8 +72,21 @@ namespace expensetracker1
                 // Connection is not open
                 Console.WriteLine("Connection is not open.");
             }
+            string getUserInfo = "SELECT name FROM users WHERE id = @id";
             string spendingSql = "SELECT amount, date, name, category FROM spending WHERE userId = @id order by date DESC";
-            string incomeSql = "SELECT amount, date, description FROM income WHERE userID = @id";
+            string incomeSql = "SELECT amount, date, description FROM income WHERE userId = @id";
+             using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                using (MySqlCommand command = new MySqlCommand(getUserInfo, connection))
+                {
+                    command.Parameters.AddWithValue("@id", id);
+                    connection.Open();
+                    
+                    string name = Convert.ToString(command.ExecuteScalar());
+                    label1.Text = name;
+                    Console.WriteLine(name);
+                }
+            }
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
                 using (MySqlCommand command = new MySqlCommand(incomeSql, connection))
@@ -111,7 +124,7 @@ namespace expensetracker1
                         totalSpending += spending;
                     }
                     float balance = totalIncome - totalSpending;
-                    lblSpendings.Text = balance.ToString();
+                    lblSpendings.Text = balance.ToString() + " $";
                 }
             }
             
