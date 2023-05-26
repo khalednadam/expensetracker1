@@ -56,6 +56,7 @@ namespace expensetracker1
 
         private void btnDashboard_Load(object sender, EventArgs e)
         {
+            
             List<float> totalSpendings = new List<float>();
             List<string> categoriesOfSpendings = new List<string>();
             float totalIncome = 0;
@@ -180,6 +181,20 @@ namespace expensetracker1
                 lblSpended3.Text = totalSpendings[2].ToString() + " - " + categoriesOfSpendings[2];
                 lblSpended4.Text = totalSpendings[3].ToString() + " - " + categoriesOfSpendings[3];
                 lblSpended5.Text = totalSpendings[4].ToString() + " - " + categoriesOfSpendings[4];
+            }
+            float div = (totalSpending) / (totalIncome);
+            float spendingPrecentage = (float) (div * 100.0);
+            Console.WriteLine(spendingPrecentage);
+            if(spendingPrecentage >= 0.0 && spendingPrecentage <= 49.0)
+            {
+                lblSpendings.ForeColor = Color.FromArgb(68, 139, 0);
+            }else if(spendingPrecentage >= 50.0 && spendingPrecentage <= 75.0)
+            {
+                lblSpendings.ForeColor = Color.FromArgb(255, 210, 0);
+            }
+            else
+            {
+                lblSpendings.ForeColor = Color.FromArgb(230, 24, 24);
             }
         }
 
