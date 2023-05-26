@@ -38,12 +38,13 @@ namespace expensetracker1
                 // Connection is not open
                 Console.WriteLine("Connection is not open.");
             }
-            string clothingSql = "SELECT amount FROM spending WHERE category = @category";
+            string clothingSql = "SELECT amount FROM spending WHERE category = @category AND userId = @id";
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
                 using (MySqlCommand command = new MySqlCommand(clothingSql, connection))
                 {
                     command.Parameters.AddWithValue("@category", "Clothing");
+                    command.Parameters.AddWithValue("@id", id);
                     connection.Open();
 
                     MySqlDataReader clothingReader = command.ExecuteReader();
