@@ -27,8 +27,6 @@ namespace expensetracker1
         {
             connection = new MySqlConnection(connectionString);
             connection.Open();
-            Console.WriteLine("Connection is open.");
-            MessageBox.Show("Connection is open.");
         }
 
         private void LoginForm_FormClosed(object sender, FormClosedEventArgs e)

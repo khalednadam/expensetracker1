@@ -8,12 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComponentFactory.Krypton.Toolkit;
-
+using MySql.Data.MySqlClient;
 
 namespace expensetracker1
 {
     public partial class Logout : KryptonForm
     {
+        private MySqlConnection connection;
+        private const string connectionString = "server=localhost;database=tracker;user=root;password=";
         public int id;
         public Logout(int id)
         {
@@ -23,7 +25,19 @@ namespace expensetracker1
 
         private void Logout_Load(object sender, EventArgs e)
         {
+            string getUserInfo = "SELECT name FROM users WHERE id = @id";
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                using (MySqlCommand command = new MySqlCommand(getUserInfo, connection))
+                {
+                    command.Parameters.AddWithValue("@id", id);
+                    connection.Open();
 
+                    string name = Convert.ToString(command.ExecuteScalar());
+                    label1.Text = name;
+                    Console.WriteLine(name);
+                }
+            }
         }
 
         private void clickLogout_Click(object sender, EventArgs e)
@@ -85,6 +99,11 @@ namespace expensetracker1
             this.Hide();
             DashboardForm dashboardForm = new DashboardForm(id);
             dashboardForm.Show();
+        }
+
+        private void Logout_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

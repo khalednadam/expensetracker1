@@ -73,9 +73,10 @@ namespace expensetracker1
                 // Connection is not open
                 Console.WriteLine("Connection is not open.");
             }
-            string getUserInfo = "SELECT name FROM users WHERE id = @id";
+            ;
             string spendingSql = "SELECT amount, date, name, category FROM spending WHERE userId = @id order by date DESC";
             string incomeSql = "SELECT amount, date, description FROM income WHERE userId = @id";
+            string getUserInfo = "SELECT name FROM users WHERE id = @id";
              using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
                 using (MySqlCommand command = new MySqlCommand(getUserInfo, connection))
@@ -148,39 +149,39 @@ namespace expensetracker1
                 lblSpended5.Text = "";
             }else if(handleSize == 1)
             {
-                lblSpended1.Text = totalSpendings[0].ToString() + " - " + categoriesOfSpendings[0];
+                lblSpended1.Text = totalSpendings[totalSpendings.Count - 1].ToString() + " - " + categoriesOfSpendings[totalSpendings.Count - 1];
                 lblSpended2.Text = "";
                 lblSpended3.Text = "";
                 lblSpended4.Text = "";
                 lblSpended5.Text = "";
             }else if(handleSize == 2)
             {
-                lblSpended1.Text = totalSpendings[0].ToString() + " - " + categoriesOfSpendings[0];
-                lblSpended2.Text = totalSpendings[1].ToString() + " - " + categoriesOfSpendings[1];
+                lblSpended1.Text = totalSpendings[totalSpendings.Count - 1].ToString() + " - " + categoriesOfSpendings[totalSpendings.Count - 1];
+                lblSpended2.Text = totalSpendings[totalSpendings.Count - 2].ToString() + " - " + categoriesOfSpendings[totalSpendings.Count - 2];
                 lblSpended3.Text = "";
                 lblSpended4.Text = "";
                 lblSpended5.Text = "";
             }else if(handleSize == 3)
             {
-                lblSpended1.Text = totalSpendings[0].ToString() + " - " + categoriesOfSpendings[0];
-                lblSpended2.Text = totalSpendings[1].ToString() + " - " + categoriesOfSpendings[1];
-                lblSpended3.Text = totalSpendings[2].ToString() + " - " + categoriesOfSpendings[2];
+                lblSpended1.Text = totalSpendings[totalSpendings.Count - 1].ToString() + " - " + categoriesOfSpendings[totalSpendings.Count - 1];
+                lblSpended2.Text = totalSpendings[totalSpendings.Count - 2].ToString() + " - " + categoriesOfSpendings[totalSpendings.Count - 2];
+                lblSpended3.Text = totalSpendings[totalSpendings.Count - 3].ToString() + " - " + categoriesOfSpendings[totalSpendings.Count - 3];
                 lblSpended4.Text = "";
                 lblSpended5.Text = "";
             }else if(handleSize == 4)
             {
-                lblSpended1.Text = totalSpendings[0].ToString() + " - " + categoriesOfSpendings[0];
-                lblSpended2.Text = totalSpendings[1].ToString() + " - " + categoriesOfSpendings[1];
-                lblSpended3.Text = totalSpendings[2].ToString() + " - " + categoriesOfSpendings[2];
-                lblSpended4.Text = totalSpendings[3].ToString() + " - " + categoriesOfSpendings[3];
+                lblSpended1.Text = totalSpendings[totalSpendings.Count - 1].ToString() + " - " + categoriesOfSpendings[totalSpendings.Count - 1];
+                lblSpended2.Text = totalSpendings[totalSpendings.Count - 2].ToString() + " - " + categoriesOfSpendings[totalSpendings.Count - 2];
+                lblSpended3.Text = totalSpendings[totalSpendings.Count - 3].ToString() + " - " + categoriesOfSpendings[totalSpendings.Count - 3];
+                lblSpended4.Text = totalSpendings[totalSpendings.Count - 4].ToString() + " - " + categoriesOfSpendings[totalSpendings.Count - 4];
                 lblSpended5.Text = "";
             }else if(handleSize == 5)
             {
-                lblSpended1.Text = totalSpendings[0].ToString() + " - " + categoriesOfSpendings[0];
-                lblSpended2.Text = totalSpendings[1].ToString() + " - " + categoriesOfSpendings[1];
-                lblSpended3.Text = totalSpendings[2].ToString() + " - " + categoriesOfSpendings[2];
-                lblSpended4.Text = totalSpendings[3].ToString() + " - " + categoriesOfSpendings[3];
-                lblSpended5.Text = totalSpendings[4].ToString() + " - " + categoriesOfSpendings[4];
+                lblSpended1.Text = totalSpendings[totalSpendings.Count - 1].ToString() + " - " + categoriesOfSpendings[totalSpendings.Count - 1];
+                lblSpended2.Text = totalSpendings[totalSpendings.Count - 2].ToString() + " - " + categoriesOfSpendings[totalSpendings.Count - 2];
+                lblSpended3.Text = totalSpendings[totalSpendings.Count - 3].ToString() + " - " + categoriesOfSpendings[totalSpendings.Count - 3];
+                lblSpended4.Text = totalSpendings[totalSpendings.Count - 4].ToString() + " - " + categoriesOfSpendings[totalSpendings.Count - 4];
+                lblSpended5.Text = totalSpendings[totalSpendings.Count - 5].ToString() + " - " + categoriesOfSpendings[totalSpendings.Count - 5];
             }
             float div = (totalSpending) / (totalIncome);
             float spendingPrecentage = (float) (div * 100.0);
@@ -289,6 +290,11 @@ namespace expensetracker1
             this.Hide();
             Addincome addincome = new Addincome(id);
             addincome.Show();
+        }
+
+        private void DashboardForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

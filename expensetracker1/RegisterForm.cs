@@ -27,7 +27,6 @@ namespace expensetracker1
             // Establish the connection to MySQL
             connection = new MySqlConnection(connectionString);
             connection.Open();
-            MessageBox.Show("Connection is open.");
             if (connection.State == ConnectionState.Open)
             {
                 // Connection is open
@@ -62,33 +61,58 @@ namespace expensetracker1
                 string passwordConfirmation = txtPasswordConfirmation.Text.ToString(); 
             int spendingIds = 0;
             int incomeIds = 0;
-                if(passwordConfirmation == password)
-                {
 
-            string Query = "insert into users(email, password, phoneNumber, name, spendingIds, incomeIds) " +
-                "values ( '" + email + "','" + password + "', '" + phoneNumber + "',  '" + name + "', '" + spendingIds +"','" + incomeIds + "')";
-            
-                MySqlConnection MyConn2 = new MySqlConnection(connectionString);
-                MySqlCommand MyCommand2 = new MySqlCommand(Query, MyConn2);
-                MySqlDataReader MyReader2;
-                MyConn2.Open();
-                MyReader2 = MyCommand2.ExecuteReader();     // Here our query will be executed and data saved into the database.
-                DialogResult dr = MessageBox.Show("Welcome, go to login page to be able to login.", "Account created", MessageBoxButtons.OK);
-                    if(dr == DialogResult.OK)
+
+                string sql = "SELECT id FROM users WHERE email = @email AND password = @password";
+
+                using (MySqlConnection connection = new MySqlConnection(connectionString))
+                {
+                    using (MySqlCommand command = new MySqlCommand(sql, connection))
                     {
-                        this.Hide();
-                        LoginForm loginForm = new LoginForm();
-                        loginForm.Show();
+                        command.Parameters.AddWithValue("@email", email);
+                        command.Parameters.AddWithValue("@password", password);
+
+                        connection.Open();
+
+                        int id = Convert.ToInt32(command.ExecuteScalar());
+
+                        if (id == 0)
+                        {
+                            if (passwordConfirmation == password)
+                            {
+
+                                string Query = "insert into users(email, password, phoneNumber, name, spendingIds, incomeIds) " +
+                                    "values ( '" + email + "','" + password + "', '" + phoneNumber + "',  '" + name + "', '" + spendingIds + "','" + incomeIds + "')";
+
+                                MySqlConnection MyConn2 = new MySqlConnection(connectionString);
+                                MySqlCommand MyCommand2 = new MySqlCommand(Query, MyConn2);
+                                MySqlDataReader MyReader2;
+                                MyConn2.Open();
+                                MyReader2 = MyCommand2.ExecuteReader();     // Here our query will be executed and data saved into the database.
+                                DialogResult dr = MessageBox.Show("Welcome, go to login page to be able to login.", "Account created", MessageBoxButtons.OK);
+                                if (dr == DialogResult.OK)
+                                {
+                                    this.Hide();
+                                    LoginForm loginForm = new LoginForm();
+                                    loginForm.Show();
+                                }
+                                while (MyReader2.Read())
+                                {
+                                }
+                                MyConn2.Close();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Passwords do not match!");
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("This email is already used by another user.");
+                        }
                     }
-                while (MyReader2.Read())
-                {
                 }
-                MyConn2.Close();
-                }
-                else
-                {
-                    MessageBox.Show("Passwords do not match!");
-                }
+                
             }
 
             catch (Exception err)

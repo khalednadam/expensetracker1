@@ -180,6 +180,7 @@ namespace expensetracker1
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Expense Tracker";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.LandForm_FormClosed);
             this.Load += new System.EventHandler(this.LandForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

@@ -73,6 +73,19 @@ namespace expensetracker1
                 // Connection is not open
                 Console.WriteLine("Connection is not open.");
             }
+            string getUserInfo = "SELECT name FROM users WHERE id = @id";
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                using (MySqlCommand command = new MySqlCommand(getUserInfo, connection))
+                {
+                    command.Parameters.AddWithValue("@id", id);
+                    connection.Open();
+
+                    string name = Convert.ToString(command.ExecuteScalar());
+                    label1.Text = name;
+                    Console.WriteLine(name);
+                }
+            }
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -150,6 +163,11 @@ namespace expensetracker1
         private void dateAddincome_ValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Addincome_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

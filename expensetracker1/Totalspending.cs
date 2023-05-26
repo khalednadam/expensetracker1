@@ -24,6 +24,19 @@ namespace expensetracker1
 
         private void Totalspending_Load(object sender, EventArgs e)
         {
+            string getUserInfo = "SELECT name FROM users WHERE id = @id";
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                using (MySqlCommand command = new MySqlCommand(getUserInfo, connection))
+                {
+                    command.Parameters.AddWithValue("@id", id);
+                    connection.Open();
+
+                    string name = Convert.ToString(command.ExecuteScalar());
+                    label1.Text = name;
+                    Console.WriteLine(name);
+                }
+            }
             // For Clothing
             float totalClothing = 0;
             connection = new MySqlConnection(connectionString);
@@ -484,6 +497,11 @@ namespace expensetracker1
         private void label13_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Totalspending_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

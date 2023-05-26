@@ -49,5 +49,10 @@ namespace expensetracker1
         {
 
         }
+
+        private void LandForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
