@@ -16,7 +16,7 @@ namespace expensetracker1
     {
         DateTime dateTime;
         private MySqlConnection connection;
-        private const string connectionString = "server=localhost;database=tracker;user=root;password=";
+        private const string connectionString = "server=sql7.freemysqlhosting.net;database=sql7621530;user=sql7621530;password=j9svHz1IY1";
         public int id;
         public Addexpense(int id)
         {

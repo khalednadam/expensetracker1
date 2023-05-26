@@ -14,7 +14,7 @@ namespace expensetracker1
     public partial class LoginForm : KryptonForm
     {
         private MySqlConnection connection;
-        private const string connectionString = "server=localhost;database=tracker;user=root;password=";
+        private const string connectionString = "server=sql7.freemysqlhosting.net;database=sql7621530;user=sql7621530;password=j9svHz1IY1";
         string id, email, phoneNumber, yearlyGoal, spendingIds, incomeIds, name, currency, password;
 
 
