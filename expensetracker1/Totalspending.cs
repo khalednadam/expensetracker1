@@ -8,11 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComponentFactory.Krypton.Toolkit;
-
+using MySql.Data.MySqlClient;
 namespace expensetracker1
 {
     public partial class Totalspending : KryptonForm
     {
+        private MySqlConnection connection;
+        private const string connectionString = "server=localhost;database=tracker;user=root;password=";
         public int id;
         public Totalspending(int id)
         {
@@ -22,6 +24,41 @@ namespace expensetracker1
 
         private void Totalspending_Load(object sender, EventArgs e)
         {
+            // For Clothing
+            float totalClothing = 0;
+            connection = new MySqlConnection(connectionString);
+            connection.Open();
+            if (connection.State == ConnectionState.Open)
+            {
+                // Connection is open
+                Console.WriteLine("Connection is open.");
+            }
+            else
+            {
+                // Connection is not open
+                Console.WriteLine("Connection is not open.");
+            }
+            string clothingSql = "SELECT amount FROM spending WHERE category = @category";
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                using (MySqlCommand command = new MySqlCommand(clothingSql, connection))
+                {
+                    command.Parameters.AddWithValue("@category", "Clothing");
+                    connection.Open();
+
+                    MySqlDataReader clothingReader = command.ExecuteReader();
+
+                    while (clothingReader.Read())
+                    {
+                        float clothing = (float)clothingReader["amount"];
+                        Console.WriteLine((float)clothing);
+                        totalClothing += clothing;
+                    }
+
+                    label7.Text = totalClothing.ToString() + " $";
+                }
+            }
+
 
         }
 
