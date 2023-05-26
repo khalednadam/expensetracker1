@@ -102,7 +102,10 @@ namespace expensetracker1
             this.btnLogout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnLogout.Size = new System.Drawing.Size(232, 52);
+            this.btnLogout.Size = new System.Drawing.Size(309, 64);
+            this.btnLogout.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Anek Bangla SemiBold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.StateCommon.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.btnLogout.StateCommon.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.btnLogout.TabIndex = 11;
             this.btnLogout.Values.Text = "Logout";
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
@@ -128,7 +131,10 @@ namespace expensetracker1
             this.btnAboutus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAboutus.Name = "btnAboutus";
             this.btnAboutus.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnAboutus.Size = new System.Drawing.Size(232, 52);
+            this.btnAboutus.Size = new System.Drawing.Size(309, 64);
+            this.btnAboutus.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Anek Bangla SemiBold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAboutus.StateCommon.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.btnAboutus.StateCommon.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.btnAboutus.TabIndex = 10;
             this.btnAboutus.Values.Text = "About Us";
             this.btnAboutus.Click += new System.EventHandler(this.btnAboutus_Click);
@@ -154,7 +160,10 @@ namespace expensetracker1
             this.btnPrefrences.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPrefrences.Name = "btnPrefrences";
             this.btnPrefrences.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnPrefrences.Size = new System.Drawing.Size(232, 52);
+            this.btnPrefrences.Size = new System.Drawing.Size(309, 64);
+            this.btnPrefrences.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Anek Bangla SemiBold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrefrences.StateCommon.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.btnPrefrences.StateCommon.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.btnPrefrences.TabIndex = 9;
             this.btnPrefrences.Values.Text = "Preferences";
             this.btnPrefrences.Click += new System.EventHandler(this.btnPrefrences_Click);
@@ -180,7 +189,10 @@ namespace expensetracker1
             this.btnTotalspending.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnTotalspending.Name = "btnTotalspending";
             this.btnTotalspending.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnTotalspending.Size = new System.Drawing.Size(232, 52);
+            this.btnTotalspending.Size = new System.Drawing.Size(309, 64);
+            this.btnTotalspending.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Anek Bangla SemiBold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTotalspending.StateCommon.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.btnTotalspending.StateCommon.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.btnTotalspending.TabIndex = 7;
             this.btnTotalspending.Values.Text = "Total Spending";
             this.btnTotalspending.Click += new System.EventHandler(this.btnTotalspending_Click);
@@ -206,7 +218,10 @@ namespace expensetracker1
             this.btnAddexpence.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddexpence.Name = "btnAddexpence";
             this.btnAddexpence.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnAddexpence.Size = new System.Drawing.Size(232, 52);
+            this.btnAddexpence.Size = new System.Drawing.Size(309, 64);
+            this.btnAddexpence.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Anek Bangla SemiBold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddexpence.StateCommon.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.btnAddexpence.StateCommon.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.btnAddexpence.TabIndex = 6;
             this.btnAddexpence.Values.Text = "Add Expense";
             this.btnAddexpence.Click += new System.EventHandler(this.btnAddexpence_Click);
@@ -232,7 +247,10 @@ namespace expensetracker1
             this.btnAddincome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddincome.Name = "btnAddincome";
             this.btnAddincome.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnAddincome.Size = new System.Drawing.Size(232, 52);
+            this.btnAddincome.Size = new System.Drawing.Size(309, 64);
+            this.btnAddincome.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Anek Bangla SemiBold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddincome.StateCommon.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.btnAddincome.StateCommon.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.btnAddincome.TabIndex = 5;
             this.btnAddincome.Values.Text = "Add Income";
             this.btnAddincome.Click += new System.EventHandler(this.btnAddincome_Click);
@@ -258,16 +276,18 @@ namespace expensetracker1
             this.btnDashboard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnDashboard.Size = new System.Drawing.Size(232, 52);
+            this.btnDashboard.Size = new System.Drawing.Size(309, 64);
+            this.btnDashboard.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Anek Bangla SemiBold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.StateCommon.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.btnDashboard.StateCommon.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.btnDashboard.TabIndex = 0;
             this.btnDashboard.Values.Text = "Dashboard";
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // label3
             // 
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(13, 20);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Font = new System.Drawing.Font("Anek Bangla", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(17, 25);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(145, 32);
             this.label3.TabIndex = 3;
@@ -276,11 +296,10 @@ namespace expensetracker1
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Anek Bangla Medium", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(13, 51);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Font = new System.Drawing.Font("Anek Bangla", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(17, 63);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 37);
+            this.label1.Size = new System.Drawing.Size(174, 47);
             this.label1.TabIndex = 4;
             this.label1.Text = "Khaled Nadam";
             // 
@@ -296,36 +315,35 @@ namespace expensetracker1
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 90F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Anek Bangla", 90F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(139)))), ((int)(((byte)(0)))));
-            this.label5.Location = new System.Drawing.Point(257, 190);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(327, 180);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(329, 135);
+            this.label5.Size = new System.Drawing.Size(467, 291);
             this.label5.TabIndex = 15;
             this.label5.Text = "500$";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Anek Bangla Medium", 19.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
             this.label7.Location = new System.Drawing.Point(285, 328);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(217, 30);
+            this.label7.Size = new System.Drawing.Size(294, 64);
             this.label7.TabIndex = 16;
             this.label7.Text = "Since you started ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Anek Bangla Medium", 19.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(4)))), ((int)(((byte)(64)))));
             this.label2.Location = new System.Drawing.Point(345, 151);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 30);
+            this.label2.Size = new System.Drawing.Size(166, 64);
             this.label2.TabIndex = 19;
             this.label2.Text = "Spending";
             this.label2.Click += new System.EventHandler(this.label2_Click_1);
@@ -333,12 +351,12 @@ namespace expensetracker1
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Anek Bangla Medium", 19.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(139)))), ((int)(((byte)(0)))));
             this.label4.Location = new System.Drawing.Point(280, 151);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 30);
+            this.label4.Size = new System.Drawing.Size(103, 64);
             this.label4.TabIndex = 18;
             this.label4.Text = "Total";
             this.label4.Click += new System.EventHandler(this.label4_Click);
