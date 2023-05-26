@@ -303,7 +303,6 @@ namespace expensetracker1
             // 
             // lblSpendings
             // 
-            this.lblSpendings.AutoSize = true;
             this.lblSpendings.Font = new System.Drawing.Font("Anek Bangla Medium", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSpendings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(210)))), ((int)(((byte)(0)))));
             this.lblSpendings.Location = new System.Drawing.Point(356, 220);
